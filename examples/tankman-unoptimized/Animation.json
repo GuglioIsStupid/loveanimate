@@ -1,0 +1,424 @@
+{
+    "ANIMATION": {
+        "name": "Tankman Assets v4",
+        "StageInstance": {
+            "SYMBOL_Instance": {
+                "SYMBOL_name": "tankman all",
+                "firstFrame": 0,
+                "symbolType": "graphic",
+                "transformationPoint": {
+                    "x": 960.2,
+                    "y": 540.1
+                },
+                "loop": "playonce",
+                "Matrix": [
+                    1,
+                    0,
+                    0,
+                    1,
+                    960.2,
+                    540.1
+                ]
+            }
+        },
+        "SYMBOL_name": "tankman all",
+        "TIMELINE": {
+            "LAYERS": [
+                {
+                    "Layer_name": "Layer 2",
+                    "Frames": [
+                        {
+                            "name": "idle",
+                            "index": 0,
+                            "duration": 14,
+                            "elements": []
+                        },
+                        {
+                            "name": "right",
+                            "index": 14,
+                            "duration": 6,
+                            "elements": []
+                        },
+                        {
+                            "name": "up",
+                            "index": 20,
+                            "duration": 5,
+                            "elements": []
+                        },
+                        {
+                            "name": "left",
+                            "index": 25,
+                            "duration": 5,
+                            "elements": []
+                        },
+                        {
+                            "name": "down",
+                            "index": 30,
+                            "duration": 5,
+                            "elements": []
+                        },
+                        {
+                            "name": "redheads",
+                            "index": 35,
+                            "duration": 76,
+                            "elements": []
+                        },
+                        {
+                            "name": "idle knife",
+                            "index": 111,
+                            "duration": 14,
+                            "elements": []
+                        },
+                        {
+                            "name": "right knife",
+                            "index": 125,
+                            "duration": 6,
+                            "elements": []
+                        },
+                        {
+                            "name": "up knife",
+                            "index": 131,
+                            "duration": 6,
+                            "elements": []
+                        },
+                        {
+                            "name": "left knife",
+                            "index": 137,
+                            "duration": 7,
+                            "elements": []
+                        },
+                        {
+                            "name": "down knife",
+                            "index": 144,
+                            "duration": 7,
+                            "elements": []
+                        },
+                        {
+                            "name": "pretty good bloody",
+                            "index": 151,
+                            "duration": 71,
+                            "elements": []
+                        }
+                    ]
+                },
+                {
+                    "Layer_name": "Layer 1",
+                    "Frames": [
+                        {
+                            "index": 0,
+                            "duration": 14,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Idle Dance",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -550.75,
+                                            "y": -162.3
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -332,
+                                            -448.55
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 14,
+                            "duration": 6,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Note Left",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -549.85,
+                                            "y": -150.55
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -351.15,
+                                            -421.45
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 20,
+                            "duration": 5,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman UP note",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -593.75,
+                                            "y": -187.85
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -379.45,
+                                            -493.9
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 25,
+                            "duration": 5,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Right Note",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -590.45,
+                                            "y": -162.65
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -342.1,
+                                            -449.2
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 30,
+                            "duration": 5,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman DOWN note",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -583.9,
+                                            "y": -103.4
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -338.6,
+                                            -337
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 35,
+                            "duration": 76,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "tankman redheads plus knife",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -221.8,
+                                            "y": -228.05
+                                        },
+                                        "loop": "playonce",
+                                        "Matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            1,
+                                            -221.8,
+                                            -228.05
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 111,
+                            "duration": 14,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Idle bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -550.75,
+                                            "y": -162.3
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -332,
+                                            -448.55
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 125,
+                            "duration": 6,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Note Left bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -549.85,
+                                            "y": -150.55
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -351.15,
+                                            -421.45
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 131,
+                            "duration": 6,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman UP note bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -593.75,
+                                            "y": -187.85
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -379.45,
+                                            -493.9
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 137,
+                            "duration": 7,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman Right Note bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -590.45,
+                                            "y": -162.65
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -342.1,
+                                            -449.2
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 144,
+                            "duration": 7,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "Tankman DOWN note bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -583.9,
+                                            "y": -103.4
+                                        },
+                                        "loop": "loop",
+                                        "Matrix": [
+                                            -1,
+                                            0,
+                                            0,
+                                            1,
+                                            -338.6,
+                                            -337
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "index": 151,
+                            "duration": 71,
+                            "elements": [
+                                {
+                                    "SYMBOL_Instance": {
+                                        "SYMBOL_name": "PRETTY GOOD tankman bloody",
+                                        "firstFrame": 0,
+                                        "symbolType": "graphic",
+                                        "transformationPoint": {
+                                            "x": -343.7,
+                                            "y": -223.5
+                                        },
+                                        "loop": "playonce",
+                                        "Matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            1,
+                                            -343.7,
+                                            -223.5
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

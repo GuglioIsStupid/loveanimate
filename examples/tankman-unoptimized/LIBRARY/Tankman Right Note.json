@@ -1,0 +1,183 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right shoulder",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":330.7,"y":224.05},
+"loop":"loop",
+"Matrix":[-0.799,0.596,0.594,0.798,358.8,172.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left hand right pose",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":426.1,"y":272.4},
+"loop":"loop",
+"Matrix":[1,-0.007,0.005,1,366.85,114.3]
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right shoulder",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":321.5,"y":226},
+"loop":"loop",
+"Matrix":[-0.827,0.556,0.554,0.826,352.15,175.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left hand right pose",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":425.5,"y":218.7},
+"loop":"loop",
+"Matrix":[1,-0.002,0,1,354.35,123.65]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Tankman hand mic",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":128.8,"y":234.15},
+"loop":"loop",
+"Matrix":[-0.137,-0.978,-0.994,0.115,237.45,289]
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Tankman hand mic",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":119.2,"y":234.15},
+"loop":"loop",
+"Matrix":[-0.256,-0.954,-0.973,0.236,233.8,275.3]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,224.5,184.7],
+"name":"8"
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,217.65,187.35],
+"name":"9"
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Tankman default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":279.75,"y":130.95},
+"loop":"loop",
+"Matrix":[-0.988,0.155,0.153,0.987,391.65,-3.15]
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Tankman default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":270.15,"y":127.75},
+"loop":"loop",
+"Matrix":[-0.994,0.108,0.105,0.994,388.4,-0.8]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"tankman body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":212.3,"y":556.05},
+"loop":"singleframe",
+"Matrix":[-1,0,-0.204,1,484.15,156.95]
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"tankman body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":212.3,"y":556.05},
+"loop":"singleframe",
+"Matrix":[-1,0,-0.171,1,471.05,156.95]
+}}]}
+]},{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left shoulder",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":169.7,"y":261.1},
+"loop":"loop",
+"Matrix":[-0.688,-0.723,-0.723,0.688,241.9,253.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":98.85,"y":247.1},
+"loop":"loop",
+"Matrix":[-0.611,-0.789,-0.874,0.677,183.95,250.15]
+}}]},{
+"index":2,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left shoulder",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":159.25,"y":264.4},
+"loop":"loop",
+"Matrix":[-0.743,-0.666,-0.666,0.743,230.6,250.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":84.3,"y":256.35},
+"loop":"loop",
+"Matrix":[-0.743,-0.666,-0.738,0.824,168.6,244]
+}}]}
+]}
+]}

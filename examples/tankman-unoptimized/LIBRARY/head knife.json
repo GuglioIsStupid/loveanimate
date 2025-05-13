@@ -1,0 +1,33 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"knife in head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":247.05,"y":52},
+"loop":"loop",
+"Matrix":[-1,0,0,1,356.35,-47.55]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Tankman default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":134.15,"y":115.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.45,0.15]
+}}]}
+]}
+]}

@@ -1,0 +1,47 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,18.25,41.35],
+"name":"77"
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,15.2,55.15],
+"name":"78"
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"visor forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":137.6,"y":128.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,15.75,52.45]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"base head forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":137.5,"y":113.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,0]
+}}]}
+]}
+]}
