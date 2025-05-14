@@ -16,5 +16,5 @@ require("loveanimate")
 
 ## 📜 TODO
 - [ ] Color Transform
-- [ ] Optimized Atlas Support
+- [X] Optimized Atlas Support
 - [ ] Regular AA Atlas Support
