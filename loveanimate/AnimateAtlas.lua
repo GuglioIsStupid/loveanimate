@@ -56,6 +56,10 @@ end
 --- @param folder string
 ---
 function AnimateAtlas:load(folder)
+    self.timeline = {}
+    self.timeline.data = json.decode(love.filesystem.read("string", folder .. "/" .. "Animation.json"))
+    self.timeline.optimized = self.timeline.data.AN ~= nil
+
     self.spritemaps = {}
     for _, item in ipairs(love.filesystem.getDirectoryItems(folder)) do
         if string.startsWith(item, "spritemap") and string.endsWith(item, ".json") then
@@ -65,21 +69,41 @@ function AnimateAtlas:load(folder)
         end
     end
     self.libraries = {}
-    for _, item in ipairs(love.filesystem.getDirectoryItems(folder .. "/LIBRARY")) do
-        if string.endsWith(item, ".json") then
-            local data = json.decode(love.filesystem.read("string", folder .. "/LIBRARY/" .. item))
-            self.libraries[string.sub(item, 1, #item - 5)] = { data = data, optimized = data.L ~= nil }
+    if self.timeline.data.SD ~= nil or self.timeline.data.SYMBOL_DICTIONARY ~= nil then
+        -- regular adobe format
+        local optimized = self.timeline.data.SD ~= nil
+        local symbolDictionary = self.timeline.data[optimized and "SD" or "SYMBOL_DICTIONARY"]
+        
+        local symbols = symbolDictionary[optimized and "S" or "Symbols"]
+        for i = 1, #symbols do
+            local symbol = symbols[i]
+            
+            local symbolName = symbol[optimized and "SN" or "SYMBOL_name"]
+            local data = symbol[optimized and "TL" or "TIMELINE"]
+            
+            self.libraries[symbolName] = { data = data, optimized = data.L ~= nil }
+        end
+    else
+        -- bta format
+        for _, item in ipairs(love.filesystem.getDirectoryItems(folder .. "/LIBRARY")) do
+            if string.endsWith(item, ".json") then
+                local data = json.decode(love.filesystem.read("string", folder .. "/LIBRARY/" .. item))
+                self.libraries[string.sub(item, 1, #item - 5)] = { data = data, optimized = data.L ~= nil }
+            end
         end
     end
     if #self.spritemaps < 1 then
         error("Couldn't find any spritemaps for folder path '" .. folder .. "'")
         return
     end
-    self.timeline = {}
-    self.timeline.data = json.decode(love.filesystem.read("string", folder .. "/" .. "Animation.json"))
-    self.timeline.optimized = self.timeline.data.AN ~= nil
-
-    self.framerate = json.decode(love.filesystem.read("string", folder .. "/" .. "metadata.json"))[self.timeline.optimized and "FRT" or "framerate"]
+    if love.filesystem.getInfo(folder .. "/metadata.json", "file") ~= nil then
+        self.framerate = json.decode(love.filesystem.read("string", folder .. "/metadata.json"))[self.timeline.optimized and "FRT" or "framerate"]
+    else
+        local optimized = self.timeline.data.FRT ~= nil
+        local hasFramerate = self.timeline.data.FRT ~= nil or self.timeline.data.framerate ~= nil
+        self.framerate = hasFramerate and (optimized and self.timeline.data.FRT or self.timeline.data.framerate) or 0
+        print(self.framerate)
+    end
     print("Loaded at " .. self.framerate .. " frames per second")
 end
 
@@ -185,32 +209,74 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                             frameIndex = firstFrame
                         end
 
-                        local symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
+                        local is3DMatrix = symbol[optimized and "M3D" or "Matrix3D"] ~= nil
                         local symbolMatrix = love.math.newTransform()
-                        symbolMatrix:setMatrix(
-                            "column", -- OKAY MAKE SURE THIS IS HERE LOL
-                            symbolMatrixRaw[1], -- a
-                            symbolMatrixRaw[2], -- b
-                            0, 0,
-                            symbolMatrixRaw[3], -- c
-                            symbolMatrixRaw[4], -- d
-                            0, 0, 0, 0, 1, 0,
-                            symbolMatrixRaw[5], -- tx
-                            symbolMatrixRaw[6], -- ty
-                            0, 1
-                        )
-                        if not colorTransform then
-                            colorTransform = symbol.color
+                        
+                        if is3DMatrix then
+                            local symbolMatrixRaw = symbol[optimized and "M3D" or "Matrix3D"]
+                            if optimized then
+                                symbolMatrix:setMatrix(
+                                    "column",
+                                    symbolMatrixRaw[1], -- a
+                                    symbolMatrixRaw[2], -- b
+                                    symbolMatrixRaw[3], symbolMatrixRaw[4],
+                                    symbolMatrixRaw[5], -- c
+                                    symbolMatrixRaw[6], -- d
+                                    symbolMatrixRaw[7], symbolMatrixRaw[8], symbolMatrixRaw[9], symbolMatrixRaw[10], symbolMatrixRaw[11], symbolMatrixRaw[12],
+                                    symbolMatrixRaw[13], -- tx
+                                    symbolMatrixRaw[14], -- ty
+                                    symbolMatrixRaw[15], symbolMatrixRaw[16]
+                                )
+                            else
+                                symbolMatrix:setMatrix(
+                                    "column",
+                                    symbolMatrixRaw["m00"],
+                                    symbolMatrixRaw["m01"],
+                                    symbolMatrixRaw["m02"],
+                                    symbolMatrixRaw["m03"],
+                                    symbolMatrixRaw["m10"],
+                                    symbolMatrixRaw["m11"],
+                                    symbolMatrixRaw["m12"],
+                                    symbolMatrixRaw["m13"],
+                                    symbolMatrixRaw["m20"],
+                                    symbolMatrixRaw["m21"],
+                                    symbolMatrixRaw["m22"],
+                                    symbolMatrixRaw["m23"],
+                                    symbolMatrixRaw["m30"],
+                                    symbolMatrixRaw["m31"],
+                                    symbolMatrixRaw["m32"],
+                                    symbolMatrixRaw["m33"]
+                                )
+                            end
+                        else
+                            local symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
+                            symbolMatrix:setMatrix(
+                                "column", -- OKAY MAKE SURE THIS IS HERE LOL
+                                symbolMatrixRaw[1], -- a
+                                symbolMatrixRaw[2], -- b
+                                0, 0,
+                                symbolMatrixRaw[3], -- c
+                                symbolMatrixRaw[4], -- d
+                                0, 0, 0, 0, 1, 0,
+                                symbolMatrixRaw[5], -- tx
+                                symbolMatrixRaw[6], -- ty
+                                0, 1
+                            )
                         end
-                        if colorTransform then
+                        -- TODO: is this shit even working correctly??
+                        local symbolColor = symbol[optimized and "C" or "color"]
+                        if symbolColor and not colorTransform then
+                            colorTransform = symbolColor
+                        end
+                        if colorTransform and symbolColor then
                             for key, value in pairs(colorTransform) do
                                 if type(value) == "number" then
                                     if string.endsWith(key, "Offset") then
                                         -- is offset
-                                        colorTransform[key] = value + symbol.color[key]
+                                        colorTransform[key] = value + symbolColor[key]
                                     else
                                         -- assume multiplier
-                                        colorTransform[key] = value * symbol.color[key]
+                                        colorTransform[key] = value * symbolColor[key]
                                     end
                                 end
                             end
@@ -227,21 +293,60 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                         colorTransformMode = colorTransformMode:lower()
 
                         local name = atlasSprite[optimized and "N" or "name"]
-                        local spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
+                        local is3DMatrix = atlasSprite[optimized and "M3D" or "Matrix3D"] ~= nil
                         
                         local spriteMatrix = love.math.newTransform()
-                        spriteMatrix:setMatrix(
-                            "column", -- OKAY MAKE SURE THIS IS HERE LOL x2
-                            spriteMatrixRaw[1], -- a
-                            spriteMatrixRaw[2], -- b
-                            0, 0,
-                            spriteMatrixRaw[3], -- c
-                            spriteMatrixRaw[4], -- d
-                            0, 0, 0, 0, 1, 0,
-                            spriteMatrixRaw[5], -- tx
-                            spriteMatrixRaw[6], -- ty
-                            0, 1
-                        )
+                        if is3DMatrix then
+                            local spriteMatrixRaw = atlasSprite[optimized and "M3D" or "Matrix3D"]
+                            if optimized then
+                                spriteMatrix:setMatrix(
+                                    "column",
+                                    spriteMatrixRaw[1], -- a
+                                    spriteMatrixRaw[2], -- b
+                                    spriteMatrixRaw[3], spriteMatrixRaw[4],
+                                    spriteMatrixRaw[5], -- c
+                                    spriteMatrixRaw[6], -- d
+                                    spriteMatrixRaw[7], spriteMatrixRaw[8], spriteMatrixRaw[9], spriteMatrixRaw[10], spriteMatrixRaw[11], spriteMatrixRaw[12],
+                                    spriteMatrixRaw[13], -- tx
+                                    spriteMatrixRaw[14], -- ty
+                                    spriteMatrixRaw[15], spriteMatrixRaw[16]
+                                )
+                            else
+                                spriteMatrix:setMatrix(
+                                    "column",
+                                    spriteMatrixRaw["m00"],
+                                    spriteMatrixRaw["m01"],
+                                    spriteMatrixRaw["m02"],
+                                    spriteMatrixRaw["m03"],
+                                    spriteMatrixRaw["m10"],
+                                    spriteMatrixRaw["m11"],
+                                    spriteMatrixRaw["m12"],
+                                    spriteMatrixRaw["m13"],
+                                    spriteMatrixRaw["m20"],
+                                    spriteMatrixRaw["m21"],
+                                    spriteMatrixRaw["m22"],
+                                    spriteMatrixRaw["m23"],
+                                    spriteMatrixRaw["m30"],
+                                    spriteMatrixRaw["m31"],
+                                    spriteMatrixRaw["m32"],
+                                    spriteMatrixRaw["m33"]
+                                )
+                            end
+                        else
+                            local spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
+                            spriteMatrix:setMatrix(
+                                "column", -- OKAY MAKE SURE THIS IS HERE LOL
+                                spriteMatrixRaw[1], -- a
+                                spriteMatrixRaw[2], -- b
+                                0, 0,
+                                spriteMatrixRaw[3], -- c
+                                spriteMatrixRaw[4], -- d
+                                0, 0, 0, 0, 1, 0,
+                                spriteMatrixRaw[5], -- tx
+                                spriteMatrixRaw[6], -- ty
+                                0, 1
+                            )
+                        end
                         local spritemaps = self.spritemaps
                         for l = 1, #spritemaps do
                             local spritemap = spritemaps[l]
@@ -260,7 +365,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
 
                                     self:setColorOffset(0, 0, 0, 0)
                                     self:setColorMultiplier(1, 1, 1, 1)
-
+                                    
                                     if colorTransformMode == "brightness" then
                                         local brightness = colorTransform["brightness"]
                                         self:setColorOffset(brightness, brightness, brightness, 0)
