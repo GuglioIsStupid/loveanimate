@@ -364,7 +364,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                                     local texture = spritemap.texture --- @type love.Image
                                     local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
                                     
-                                    local drawMatrix = matrix:clone():apply(spriteMatrix)
+                                    local drawMatrix = matrix*spriteMatrix
                                     if sprite.rotated then
                                         drawMatrix:translate(0,sprite.w)
                                         drawMatrix:rotate(-math.pi/2)
