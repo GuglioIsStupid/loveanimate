@@ -1,0 +1,128 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":53.2,"y":19.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,-0.95]
+}}]},{
+"index":8,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":52.45,"y":19.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-0.75,-0.95]
+}}]},{
+"index":10,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":49.2,"y":19.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-4,-0.95]
+}}]},{
+"index":11,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":33.05,"y":29.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-6.75,17.35]
+}}]},{
+"index":13,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":31.3,"y":29.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-8.5,17.35]
+}}]},{
+"index":16,
+"duration":6,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":30.8,"y":29.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-9,17.35]
+}}]},{
+"index":22,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":31.55,"y":29.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-8.25,17.35]
+}}]},{
+"index":24,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":33.05,"y":29.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-6.75,17.35]
+}}]},{
+"index":25,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":50.2,"y":19.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,-3,-0.45]
+}}]},{
+"index":27,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":52.7,"y":19.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-0.5,-0.95]
+}}]},{
+"index":30,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot eyes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":53.2,"y":19.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,-0.95]
+}}]}
+]}
+]}

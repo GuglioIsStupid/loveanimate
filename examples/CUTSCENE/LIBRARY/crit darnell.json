@@ -1,0 +1,143 @@
+{"LAYERS":[
+{
+"Layer_name":"black lightning Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1.058,0,0,1.058,-896,-23.2],
+"name":"38"
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1.058,0,0,1.058,-742.4,-23.15],
+"name":"39"
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1.058,0,0,1.058,-226.85,-53],
+"name":"40"
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1.058,0,0,1.058,-930.6,-120.2],
+"name":"41"
+}}]},{
+"index":4,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":2.2,"y":-239.95},
+"loop":"loop",
+"Matrix":[1,0,0,2.061,0.2,263]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":8.2,"y":190.15},
+"loop":"loop",
+"Matrix":[1,0,0,2.304,0.2,480.5]
+}}]},{
+"index":5,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":-29.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.2,-29.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":3,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":358.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.2,358.2]
+}}]},{
+"index":7,
+"duration":29,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":3,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":0.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.2,0.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black lightning",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":312.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.2,312.2]
+}}]}
+]},{
+"Layer_name":"white whip loop Layer",
+"Layer_type":"Clipper",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[]
+},{
+"index":4,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"white intro loop",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":0.1},
+"loop":"playonce",
+"Matrix":[1,0,0,1,0.2,0.1]
+}}]},{
+"index":7,
+"duration":29,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"white whip loop",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.2,"y":0.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,0.2,0.1]
+}}]}
+]},{
+"Layer_name":"piggo animated Layer",
+"Clipped_by":"white whip loop Layer",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[]
+},{
+"index":4,
+"duration":32,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"danny animated",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0,"y":0.8},
+"loop":"playonce",
+"Matrix":[1,0,0,1,0,0.8]
+}}]}
+]}
+]}

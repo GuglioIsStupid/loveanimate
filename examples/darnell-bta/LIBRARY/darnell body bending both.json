@@ -1,0 +1,29 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell body bending over snap",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":163.55,"y":335.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,1.1,190.4]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell body bending over",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":161.4,"y":330.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,188.15]
+}}]}
+]}
+]}

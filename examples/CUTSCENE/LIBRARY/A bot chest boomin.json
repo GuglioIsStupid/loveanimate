@@ -1,0 +1,55 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A symbol",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":268.45,"y":301.9},
+"loop":"loop",
+"Matrix":[1.04,0,0,0.961,230.4,277.25]
+}}]},{
+"index":2,
+"duration":19,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A symbol",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":268.95,"y":300.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,232.35,274.75]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A bot chest bump",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.9,"y":167},
+"loop":"loop",
+"Matrix":[1,0,0,1,-4.55,-1.9]
+}}]},{
+"index":2,
+"duration":19,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Abot Chest",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":487.75,"y":167.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,0]
+}}]}
+]}
+]}

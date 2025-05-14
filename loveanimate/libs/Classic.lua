@@ -13,7 +13,7 @@
 --
 
 ---
---- @class chip.libs.Class
+--- @class loveanimate.libs.Class
 ---
 local Class = {__class = "Class"}
 Class.__index = Class

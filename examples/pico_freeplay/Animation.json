@@ -1,0 +1,98 @@
+{
+"ANIMATION":{
+"name":"pico freeplay assets v7",
+"StageInstance":{
+"SYMBOL_Instance":{
+"SYMBOL_name":"Pico Freeplay All",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":639.9,"y":359.9},
+"loop":"playonce",
+"Matrix":[1,0,0,1,639.9,359.9]
+}},
+"SYMBOL_name":"Pico Freeplay All",
+"TIMELINE":{
+"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":17,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico dj intro",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,0,0]
+}}]},{
+"index":17,
+"duration":43,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico DJ",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-445.8,"y":155.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,6.75,2.4]
+}}]},{
+"index":60,
+"duration":30,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico DJ confirm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-139.6,"y":150.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,7.25,2.75]
+}}]},{
+"index":90,
+"duration":55,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico cheer",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-337.5,"y":92.75},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-337.5,92.75]
+}}]},{
+"index":145,
+"duration":115,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico DJ afk",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-445.4,"y":141.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,7.15,2.7]
+}}]},{
+"index":260,
+"duration":173,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico DJ loss",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-139.7,"y":150.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,7.15,2.7]
+}}]},{
+"index":433,
+"duration":60,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico DJ to CS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-445.4,"y":147.5},
+"loop":"playonce",
+"Matrix":[1,0,0,1,7.15,2.7]
+}}]}
+]}
+]}}}

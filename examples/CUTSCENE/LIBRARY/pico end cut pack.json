@@ -1,0 +1,1745 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[]
+},{
+"index":4,
+"duration":28,
+"elements":[]
+},{
+"index":32,
+"duration":17,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"click anim",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-257.05,"y":-233.45},
+"loop":"playonce",
+"Matrix":[0.941,-0.335,0.335,0.941,-358.3,-240.3]
+}}]},{
+"index":49,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":26.2,"y":30.2},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,-25.1,-17]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-40.55,"y":69.3},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,-104.95,10.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun foreground pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-12.45,"y":-74.85},
+"loop":"loop",
+"Matrix":[1.023,-0.072,0.07,0.997,-293.55,-235.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun holdin hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-45.25,"y":46.55},
+"loop":"loop",
+"Matrix":[0.997,-0.07,0.07,0.997,-112.8,-18.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger finger",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-78.45,"y":17.1},
+"loop":"loop",
+"Matrix":[0.997,-0.07,0.07,0.997,-132.65,-12.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger guard",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-82.3,"y":20.65},
+"loop":"loop",
+"Matrix":[0.997,-0.07,0.07,0.997,-107.55,-14.25]
+}}]},{
+"index":51,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":60.3,"y":2.2},
+"loop":"loop",
+"Matrix":[0.991,-0.127,0.127,0.991,-26.5,-8.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.55,"y":70.3},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,-100.95,11.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun foreground pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":2.55,"y":-66.85},
+"loop":"loop",
+"Matrix":[1.021,-0.089,0.087,0.996,-281.1,-222.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun holdin hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-24.25,"y":52.55},
+"loop":"loop",
+"Matrix":[0.997,-0.07,0.07,0.997,-91.8,-12.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger finger",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-64.45,"y":22.1},
+"loop":"loop",
+"Matrix":[0.997,-0.07,0.07,0.997,-118.65,-7.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger guard",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-68.3,"y":26.65},
+"loop":"loop",
+"Matrix":[0.982,-0.183,0.183,0.982,-97.35,-5.1]
+}}]},{
+"index":52,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":89.95,"y":-19.9},
+"loop":"loop",
+"Matrix":[0.997,0.065,-0.065,0.997,-24.45,-27.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-53.3,"y":67.85},
+"loop":"loop",
+"Matrix":[0.999,-0.04,0.04,0.999,-118.2,9.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-61.6,"y":51.3},
+"loop":"loop",
+"Matrix":[1.097,0.092,-0.092,1.097,-122,-24.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-119.7,"y":7.4},
+"loop":"loop",
+"Matrix":[1.099,0.048,-0.048,1.099,-174.2,-183.55]
+}}]},{
+"index":54,
+"duration":17,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-52.3,"y":67.85},
+"loop":"loop",
+"Matrix":[0.999,-0.04,0.04,0.999,-117.2,9.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-64.1,"y":50.35},
+"loop":"loop",
+"Matrix":[1.11,0.093,-0.093,1.11,-125.25,-26]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-12.75,"y":-52.85},
+"loop":"loop",
+"Matrix":[1.11,0.093,-0.093,1.11,-170.25,-189.35]
+}}]},{
+"index":71,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-52.3,"y":67.85},
+"loop":"loop",
+"Matrix":[0.999,-0.04,0.04,0.999,-117.2,9.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-31.55,"y":62.35},
+"loop":"loop",
+"Matrix":[1.104,-0.202,0.141,1.096,-107.25,4.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-2.9,"y":-50.75},
+"loop":"loop",
+"Matrix":[1.104,-0.202,0.141,1.096,-185.3,-141.2]
+}}]},{
+"index":73,
+"duration":37,
+"elements":[]
+},{
+"index":110,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":386.65,"y":23.05},
+"loop":"loop",
+"Matrix":[1.074,0,0,1.074,340.2,-14.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":456.6,"y":2.9},
+"loop":"loop",
+"Matrix":[1.462,1.137,-1.051,1.567,441.1,-115.5]
+}}]},{
+"index":111,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":518.55,"y":-42.45},
+"loop":"loop",
+"Matrix":[-0.878,1.443,1.201,0.971,502.4,-147.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic handle under",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":520.8,"y":-41.3},
+"loop":"loop",
+"Matrix":[1.269,0,0,1.269,335.75,-97.3]
+}}]},{
+"index":112,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":563.05,"y":26.7},
+"loop":"loop",
+"Matrix":[1.533,1.192,-1.102,1.643,546.9,-97.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic ring",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":599,"y":14.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,540.5,-44.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":617.15,"y":8.55},
+"loop":"loop",
+"Matrix":[1.461,0,0,1.461,553.9,-43.05]
+}}]},{
+"index":113,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":555.5,"y":160.8},
+"loop":"loop",
+"Matrix":[1.283,1.314,-1.077,1.441,548.7,40.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic handle under",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":538.4,"y":162.8},
+"loop":"loop",
+"Matrix":[-1.374,0.395,0.293,1.396,725.9,43.65]
+}}]},{
+"index":114,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":670.1,"y":288},
+"loop":"loop",
+"Matrix":[-1.271,0.287,0.215,1.283,717.55,230.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":591.8,"y":286.85},
+"loop":"loop",
+"Matrix":[-1.323,1.54,1.372,1.402,586.95,158.75]
+}}]},{
+"index":116,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":626.6,"y":412.8},
+"loop":"loop",
+"Matrix":[1.271,0.287,-0.215,1.283,579.15,355.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":680.9,"y":411.65},
+"loop":"loop",
+"Matrix":[1.323,1.54,-1.372,1.402,685.75,283.55]
+}}]},{
+"index":118,
+"duration":12,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[]
+},{
+"index":4,
+"duration":21,
+"elements":[]
+},{
+"index":25,
+"duration":24,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"click anim",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-207.45,"y":-284.45},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-300.65,-324.9]
+}}]},{
+"index":49,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,90.5,-118.85],
+"name":"17"
+}}]},{
+"index":50,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,87.15,-108.5],
+"name":"18"
+}}]},{
+"index":51,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,77.65,-83.55],
+"name":"19"
+}}]},{
+"index":53,
+"duration":18,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,79.25,-89.45],
+"name":"20"
+}}]},{
+"index":71,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,74.4,-82.35],
+"name":"21"
+}}]},{
+"index":73,
+"duration":1,
+"elements":[]
+},{
+"index":74,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"no ammo anim",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-144.7,"y":-29.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-222,-94.05]
+}}]},{
+"index":108,
+"duration":22,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico gun reload",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":66.85,"y":51.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-151.05,-189.15]
+}}]},{
+"index":4,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico gun reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":66.85,"y":51.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-151.05,-189.15]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Pico gun reload",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":66.85,"y":51.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-151.05,-189.15]
+}}]},{
+"index":9,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico body reload",
+"firstFrame":10,
+"symbolType":"graphic",
+"transformationPoint":{"x":60.85,"y":148.6},
+"loop":"loop",
+"Matrix":[1.004,0,0,1.004,-157.95,13.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":80.95,"y":-52.15},
+"loop":"loop",
+"Matrix":[0.988,-0.176,0.176,0.988,-67.9,-138]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":53.8,"y":5.35},
+"loop":"loop",
+"Matrix":[0.999,-0.092,0.092,0.999,-21.4,-36.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":149.2,"y":79.85},
+"loop":"loop",
+"Matrix":[1.001,-0.088,0.045,1.003,93.5,1.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":12.75,"y":187.15},
+"loop":"loop",
+"Matrix":[0.999,-0.101,0.101,0.999,-77.85,88.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":101,"y":147.5},
+"loop":"loop",
+"Matrix":[1.003,-0.045,0.045,1.003,40.85,87.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":160.45,"y":124.9},
+"loop":"loop",
+"Matrix":[0.889,0.444,-0.388,0.935,139.95,64.15]
+}}]},{
+"index":11,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico body reload",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":62.85,"y":159.85},
+"loop":"loop",
+"Matrix":[1.029,0,0,1.029,-161.35,21.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":86.45,"y":-45.85},
+"loop":"loop",
+"Matrix":[1.012,-0.18,0.18,1.012,-66.05,-133.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":61.6,"y":13.1},
+"loop":"loop",
+"Matrix":[1.024,-0.094,0.094,1.024,-15.45,-29.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":165.45,"y":87.45},
+"loop":"loop",
+"Matrix":[1.026,-0.09,0.045,1.028,108.45,6.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":3.65,"y":184.5},
+"loop":"loop",
+"Matrix":[1.019,-0.14,0.14,1.019,-92.7,86.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.85,"y":154.75},
+"loop":"loop",
+"Matrix":[1.028,-0.045,0.045,1.028,56.2,93.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":178.8,"y":131.6},
+"loop":"loop",
+"Matrix":[0.91,0.455,-0.398,0.958,157.8,69.3]
+}}]},{
+"index":13,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":130.35,"y":29.05},
+"loop":"loop",
+"Matrix":[0.997,-0.075,0.075,0.997,119.9,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":130.6,"y":171.65},
+"loop":"loop",
+"Matrix":[1,0,-0.025,1,-72.5,-26]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":144.5,"y":-125.1},
+"loop":"loop",
+"Matrix":[0.999,0.031,-0.031,0.999,11.35,-279.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun foreground pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-16.35,"y":-51.35},
+"loop":"loop",
+"Matrix":[1.1,0.034,-0.034,1.1,-273.15,-299.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":63.4,"y":3.25},
+"loop":"loop",
+"Matrix":[0.995,-0.092,0.092,0.995,-19.25,-12.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-30.55,"y":62.35},
+"loop":"loop",
+"Matrix":[1.016,0,0,1.016,-94.1,0.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun holdin hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-44.65,"y":38.9},
+"loop":"loop",
+"Matrix":[1.1,0.034,-0.034,1.1,-111.4,-39.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger finger",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-77.75,"y":2.85},
+"loop":"loop",
+"Matrix":[1.1,0.034,-0.034,1.1,-133.8,-35.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger guard",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-82.3,"y":6.25},
+"loop":"loop",
+"Matrix":[1.1,0.034,-0.034,1.1,-106.05,-34.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.75,"y":49.2},
+"loop":"loop",
+"Matrix":[0.401,0.534,-0.514,0.446,267.65,6.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc1 snap pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":170.95,"y":-45.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,97.75,-110.45]
+}}]},{
+"index":15,
+"duration":10,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Gun Aimed Pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":34,"y":46.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-265.7,-276.75]
+}}]},{
+"index":25,
+"duration":7,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger pull anim pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":320,"y":180.8},
+"loop":"playonce",
+"Matrix":[1,0,0,1,320,180.8]
+}}]},{
+"index":32,
+"duration":9,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger pull anim pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":320,"y":180.8},
+"loop":"playonce",
+"Matrix":[1,0,0,1,320,180.8]
+}}]},{
+"index":41,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":199.35,"y":44.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,127.15,0.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":125.6,"y":172.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,-82.5,-25.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":135.2,"y":-125.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.7,-275.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":163.95,"y":-50.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,90.7,-118.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun foreground pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-122,"y":-124.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,-265.5,-256.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":25.4,"y":29.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,-24.45,-19.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-40.55,"y":66.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,-103.1,5.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun holdin hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-48.4,"y":44.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,-111.3,-24.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger finger",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-79.5,"y":12.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-131.5,-20.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger guard",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-83.55,"y":16},
+"loop":"loop",
+"Matrix":[1,0,0,1,-106.3,-20.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":263.35,"y":55.6},
+"loop":"loop",
+"Matrix":[0.484,0.46,-0.433,0.525,262.05,12.45]
+}}]},{
+"index":49,
+"duration":24,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":199.35,"y":44.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,127.15,0.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":125.6,"y":172.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,-82.5,-25.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc1 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":135.2,"y":-125.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.7,-275.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":263.35,"y":55.6},
+"loop":"loop",
+"Matrix":[0.484,0.46,-0.433,0.525,262.05,12.45]
+}}]},{
+"index":73,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":145,"y":355.25},
+"loop":"loop",
+"Matrix":[0.982,0,-0.011,1.019,-107.2,-18]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":249.1,"y":83.3},
+"loop":"loop",
+"Matrix":[0.997,0.079,-0.079,0.997,200.6,4.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":160.7,"y":-127.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,12.95,-284.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":273.7,"y":85.4},
+"loop":"loop",
+"Matrix":[0.993,0.118,-0.118,0.993,227.75,18.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":3.15,"y":200.6},
+"loop":"loop",
+"Matrix":[0.961,0.067,-0.067,0.961,-50.6,135.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc2 snap pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":139.65,"y":-51.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,82.6,-129.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":46.4,"y":110.8},
+"loop":"loop",
+"Matrix":[0.961,0.067,-0.067,0.961,-91.45,-5.5]
+}}]},{
+"index":75,
+"duration":22,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":128,"y":185.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-115.8,-11]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":255.05,"y":93.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,200.45,18.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":160.7,"y":-117.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,12.95,-274.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":143.5,"y":-39.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,84.95,-114.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":284.95,"y":96.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,231.4,35.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-4.8,"y":200.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,-65.2,137.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":33.45,"y":104.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-117.65,-5.75]
+}}]},{
+"index":97,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":130,"y":381.15},
+"loop":"loop",
+"Matrix":[1,0,0.013,0.992,-120.75,-8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":252.05,"y":84.45},
+"loop":"loop",
+"Matrix":[0.999,-0.072,0.018,1,196.2,13.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":165.1,"y":-114.15},
+"loop":"loop",
+"Matrix":[0.998,0.057,-0.057,0.998,26.6,-278.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":143.45,"y":-37.2},
+"loop":"loop",
+"Matrix":[0.998,0.057,-0.057,0.998,89.3,-114.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":278.95,"y":96.2},
+"loop":"loop",
+"Matrix":[0.987,-0.157,0.157,0.987,216.5,44.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.95,"y":199.8},
+"loop":"loop",
+"Matrix":[0.995,0.097,-0.097,0.995,-53,130.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":48.35,"y":107.85},
+"loop":"loop",
+"Matrix":[0.995,0.097,-0.097,0.995,-91.3,-16.65]
+}}]},{
+"index":99,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":130,"y":381.15},
+"loop":"loop",
+"Matrix":[1,0,0.013,0.992,-120.75,-8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm back igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":251.05,"y":76.7},
+"loop":"loop",
+"Matrix":[0.99,-0.147,0.092,0.995,190.1,10.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":161.6,"y":-106.6},
+"loop":"loop",
+"Matrix":[0.991,0.127,-0.127,0.991,35.05,-280.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":134.6,"y":-31.35},
+"loop":"loop",
+"Matrix":[0.991,0.127,-0.127,0.991,86.1,-112.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":267.8,"y":82.4},
+"loop":"loop",
+"Matrix":[0.954,-0.298,0.298,0.954,198.45,40.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand holdgun igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-22.8,"y":138.6},
+"loop":"loop",
+"Matrix":[0.978,0.205,-0.205,0.978,-68.85,63.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun cocked sideways",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-40.65,"y":55.5},
+"loop":"loop",
+"Matrix":[0.852,0.52,-0.52,0.852,-28.25,-102.4]
+}}]},{
+"index":100,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":35.75,"y":23.65},
+"loop":"loop",
+"Matrix":[0.998,0.066,-0.066,0.998,-104.55,-265.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":147.65,"y":381.8},
+"loop":"loop",
+"Matrix":[1.014,0,0.005,0.992,-125.05,18.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":96.05,"y":-65.95},
+"loop":"loop",
+"Matrix":[0.999,-0.045,0.045,0.999,-57.05,-218.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":75.35,"y":112.4},
+"loop":"loop",
+"Matrix":[0.837,0.713,-0.616,0.929,67.1,40.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":186.1,"y":37.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,148.2,2.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":178.8,"y":61.25},
+"loop":"loop",
+"Matrix":[0.998,-0.053,0.053,0.998,102.2,28.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 snap pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":86.55,"y":17.6},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,-8.55,-44.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":145.45,"y":109.95},
+"loop":"loop",
+"Matrix":[0.998,-0.053,0.053,0.998,62.4,53.05]
+}}]},{
+"index":102,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":32.7,"y":37.6},
+"loop":"loop",
+"Matrix":[0.989,0.145,-0.165,0.986,-71.45,-265.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":101.55,"y":-74.05},
+"loop":"loop",
+"Matrix":[1,-0.01,0.01,1,-46.15,-231.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":90.65,"y":9.45},
+"loop":"loop",
+"Matrix":[1,-0.01,0.01,1,-4.35,-48.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":85,"y":105.35},
+"loop":"loop",
+"Matrix":[0.798,0.757,-0.664,0.896,80.55,33.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":191.1,"y":38.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,153.2,3.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":191,"y":59.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,116.25,22.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":155.1,"y":106.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,75.2,45.4]
+}}]},{
+"index":104,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":28.75,"y":45.65},
+"loop":"loop",
+"Matrix":[0.99,0.14,-0.14,0.99,-82.75,-257.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":85,"y":105.35},
+"loop":"loop",
+"Matrix":[0.798,0.757,-0.664,0.896,80.55,33.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":191.1,"y":38.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,153.2,3.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":191,"y":59.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,116.25,22.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":155.1,"y":106.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,75.2,45.4]
+}}]},{
+"index":106,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":30.7,"y":48.6},
+"loop":"loop",
+"Matrix":[0.999,0.04,-0.04,0.999,-108.5,-246.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":98,"y":92.35},
+"loop":"loop",
+"Matrix":[0.798,0.757,-0.664,0.896,93.55,20.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":199.1,"y":38.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,161.2,3.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":197,"y":54.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,122.25,17.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":172.1,"y":93.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,92.2,32.4]
+}}]},{
+"index":108,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-34.3,"y":-88.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,-120.35,-240.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":98,"y":92.35},
+"loop":"loop",
+"Matrix":[0.798,0.757,-0.664,0.896,93.55,20.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":199.1,"y":38.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,161.2,3.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":197,"y":54.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,122.25,17.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":172.1,"y":93.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,92.2,32.4]
+}}]},{
+"index":109,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-34.3,"y":-88.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,-120.35,-240.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":199.1,"y":38.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,161.2,3.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm igc2 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":229,"y":81.7},
+"loop":"loop",
+"Matrix":[0.943,0.33,-0.33,0.943,170.75,22.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand mic toss igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":192.7,"y":83.6},
+"loop":"loop",
+"Matrix":[0.998,0.052,-0.052,0.998,33.4,1.05]
+}}]},{
+"index":110,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm clenched igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":88.75,"y":83},
+"loop":"loop",
+"Matrix":[0.993,-0.118,0.118,0.993,-136.05,24.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":138.7,"y":381.8},
+"loop":"loop",
+"Matrix":[1.009,0,0.008,0.997,-124.6,16.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":99.6,"y":-70.7},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,-50.05,-226.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":89.75,"y":12.95},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,-5.95,-43.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm outward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":169.25,"y":50.9},
+"loop":"loop",
+"Matrix":[0.948,-0.041,0.044,0.999,161.55,14]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand open palm pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":329.65,"y":50.95},
+"loop":"loop",
+"Matrix":[1.147,0.035,-0.035,1.147,213.35,-35.45]
+}}]},{
+"index":112,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm clenched igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":94.7,"y":77},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,-132.15,0.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm outward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":165.2,"y":55.1},
+"loop":"loop",
+"Matrix":[1.019,0,0,1,157.85,13.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand open palm pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":309.8,"y":57.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,206.2,-15.05]
+}}]},{
+"index":114,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm clenched igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":87.2,"y":80.5},
+"loop":"loop",
+"Matrix":[1,-0.014,0.014,1,-131,-4.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm outward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":268.2,"y":59.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,158,13.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand open palm pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":305.8,"y":57.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,202.2,-15.05]
+}}]},{
+"index":116,
+"duration":14,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm clenched igc pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-9.3,"y":77},
+"loop":"loop",
+"Matrix":[1,0,0,1,-129.75,-7.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":117.65,"y":201.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-119.2,15.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head igc3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":103.7,"y":-75.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-42.45,-234.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face igc3 pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":92,"y":8.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-2.45,-50.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm outward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":268.2,"y":59.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,158,13.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand open palm pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":304.8,"y":57.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,201.2,-15.05]
+}}]}
+]},{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[]
+},{
+"index":4,
+"duration":96,
+"elements":[]
+},{
+"index":100,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss1",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":127.35,"y":-310.5},
+"loop":"loop",
+"Matrix":[0.895,-0.443,0.443,0.895,10.45,-366.15]
+}}]},{
+"index":101,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss1",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":226.4,"y":-261.55},
+"loop":"loop",
+"Matrix":[0.998,0.008,-0.008,0.998,147.2,-363.85]
+}}]},{
+"index":102,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":270.85,"y":-197.45},
+"loop":"loop",
+"Matrix":[0.948,-0.346,0.209,0.977,198.8,-253.4]
+}}]},{
+"index":104,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":300.85,"y":-100.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,242.05,-178.5]
+}}]},{
+"index":106,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss 3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":311.65,"y":6.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,258.65,-71.3]
+}}]},{
+"index":108,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun toss 4",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":319.95,"y":177.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,278,105.85]
+}}]},{
+"index":109,
+"duration":21,
+"elements":[]
+}
+]}
+]}

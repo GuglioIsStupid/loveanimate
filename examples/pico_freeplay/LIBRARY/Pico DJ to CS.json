@@ -1,0 +1,18 @@
+{"LAYERS":[
+{
+"Layer_name":"pico to character select placeholder Layer",
+"Frames":[
+{
+"index":0,
+"duration":33,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico to character select placeholder",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,0,0]
+}}]}
+]}
+]}

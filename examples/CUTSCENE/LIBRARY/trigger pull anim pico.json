@@ -1,0 +1,51 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger pull pose snap",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-279.9,"y":-134.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,-575,-459.25]
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"trigger pull pose",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-281.55,"y":-133.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-578.3,-456.75]
+}}]},{
+"index":3,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Gun Aimed Pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-286,"y":-133.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-585.7,-456.75]
+}}]},{
+"index":6,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Gun Aimed Pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-286,"y":-133.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-585.7,-456.75]
+}}]}
+]}
+]}

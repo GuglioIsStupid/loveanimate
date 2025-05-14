@@ -1,0 +1,66 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left face overshoot",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-179.45,"y":-129.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-251.2,-180.7]
+}}]},{
+"index":2,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-177,"y":-129.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-252.65,-182.55]
+}}]},{
+"index":5,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-177,"y":-129.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-252.65,-182.55]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":5,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-170.8,"y":-188.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-306.8,-301.65]
+}}]},{
+"index":5,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-170.8,"y":-188.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,-306.8,-301.65]
+}}]}
+]}
+]}

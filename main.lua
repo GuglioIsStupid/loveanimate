@@ -2,8 +2,10 @@
 
 require("loveanimate")
 
-local camX = 0
-local camY = 0
+local camX = -640
+local camY = -360
+local camZoom = 1
+
 local timer = 0.0
 local frame = 0
 
@@ -14,8 +16,9 @@ local men
 
 function love.load()
     men = love.animate.newAtlas()
-    men:load("examples/tankman-unoptimized")
-    men.symbol = "tankman all"
+    men:load("examples/CUTSCENE")
+    -- men:load("examples/pico_freeplay")
+    -- men.symbol = "Pico DJ"
 
     love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
 end
@@ -35,7 +38,7 @@ function love.update(dt)
     end
 
 	timer = timer + dt
-	local length = men:getLength()
+	local length = men:getTimelineLength(men:getSymbolTimeline(men.symbol))
 	while timer > 1.0 / 24.0 do
 		frame = frame + 1
 		if frame > length - 1 then
@@ -46,8 +49,21 @@ function love.update(dt)
 	men.frame = frame
 end
 
+function love.wheelmoved(x, y)
+	if y < 0 then
+		camZoom = camZoom - (0.1 * camZoom)
+	else
+		camZoom = camZoom + (0.1 * camZoom)
+	end
+	camZoom = math.min(math.max(camZoom, 0.1), 10.0)
+end
+
 function love.draw()
+	love.graphics.push()
+	love.graphics.translate(love.graphics.getWidth() * (1 - camZoom) * 0.5, love.graphics.getHeight() * (1 - camZoom) * 0.5)
+	love.graphics.scale(camZoom, camZoom)
     men:draw(-camX, -camY)
+	love.graphics.pop()
     love.graphics.print(love.timer.getFPS() .. " FPS", 10, 3)
 end
 

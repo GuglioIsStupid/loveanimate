@@ -1,0 +1,344 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter thumb",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":65.9,"y":230.25},
+"loop":"loop",
+"Matrix":[0.991,-0.131,0.131,0.991,36.45,205]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":75.9,"y":294.55},
+"loop":"loop",
+"Matrix":[0.991,-0.131,0.131,0.991,17.45,242.75]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter thumb",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":70.4,"y":233.15},
+"loop":"loop",
+"Matrix":[0.999,-0.035,0.035,0.999,43.5,205.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":74.2,"y":298.15},
+"loop":"loop",
+"Matrix":[0.999,-0.035,0.035,0.999,21,240.9]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter thumb",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":72.1,"y":233.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,46.2,204.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":73.6,"y":298.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,22.4,239.1]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[]
+},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":114.4,"y":240.3},
+"loop":"loop",
+"Matrix":[0.999,0.045,-0.045,0.999,72.15,202.7]
+}}]},{
+"index":3,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":114.85,"y":241.4},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,69.85,207.2]
+}}]},{
+"index":5,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":114.65,"y":239.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,70.75,203.65]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":147.85,"y":217.45},
+"loop":"playonce",
+"Matrix":[1,0.018,-0.018,1,353.35,311.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":116.15,"y":239.4},
+"loop":"loop",
+"Matrix":[0.996,0.089,-0.089,0.996,75.55,200.05]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head left",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":138.95,"y":212.05},
+"loop":"playonce",
+"Matrix":[1,0.008,-0.008,1,354.15,304.5]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head left",
+"firstFrame":5,
+"symbolType":"graphic",
+"transformationPoint":{"x":355,"y":301.85},
+"loop":"playonce",
+"Matrix":[1,0,0,1,355,301.85]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.25,"y":262},
+"loop":"loop",
+"Matrix":[1,0,0,1,150.15,226.55]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.25,"y":260.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,150.15,224.75]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.25,"y":260.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,150.15,224.75]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":224.35,"y":264.3},
+"loop":"loop",
+"Matrix":[0.999,0.049,-0.049,0.999,171.15,205.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.95,"y":288.1},
+"loop":"loop",
+"Matrix":[0.996,0.089,-0.089,0.996,236.7,176.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":181.2,"y":485.3},
+"loop":"singleframe",
+"Matrix":[1.015,0,0,0.994,-2.75,189.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":110.05,"y":274.25},
+"loop":"loop",
+"Matrix":[0.998,-0.061,0.061,0.998,61.8,215.8]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":226.4,"y":267.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,170.4,211.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":307,"y":257.4},
+"loop":"loop",
+"Matrix":[1,0.009,-0.009,1,230.8,180.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":180.3,"y":335.05},
+"loop":"singleframe",
+"Matrix":[1,0,0,1,0,188]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":110.15,"y":280.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,65.55,218.7]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":226.4,"y":267.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,170.4,211.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":307,"y":257.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,230.05,181.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":180.3,"y":335.05},
+"loop":"singleframe",
+"Matrix":[1,0,0,1,0,188]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":110.15,"y":280.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,65.55,218.7]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":156.7,"y":233.6},
+"loop":"loop",
+"Matrix":[0.996,0.089,-0.089,0.996,80.2,189.7]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":154.65,"y":232.6},
+"loop":"loop",
+"Matrix":[0.999,0.045,-0.045,0.999,76.25,192.2]
+}}]},{
+"index":3,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":154.4,"y":230.65},
+"loop":"loop",
+"Matrix":[0.999,-0.031,0.031,0.999,73.15,196.35]
+}}]},{
+"index":5,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":154.55,"y":229.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,74.4,192.95]
+}}]}
+]}
+]}

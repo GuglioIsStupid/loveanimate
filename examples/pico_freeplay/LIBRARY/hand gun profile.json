@@ -1,0 +1,66 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger suicide",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":26.55,"y":12},
+"loop":"loop",
+"Matrix":[1,0,0,1,7.55,-0.2]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger suicide",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":27.65,"y":12},
+"loop":"loop",
+"Matrix":[1,0,0,1,8.65,-0.2]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger suicide",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":34.7,"y":11.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,15.7,-0.5]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"finger suicide",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":32.5,"y":11.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,13.5,-0.5]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand triger",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":38.45,"y":30.45},
+"loop":"loop",
+"Matrix":[1,0,0,1,-0.2,-0.2]
+}}]}
+]}
+]}

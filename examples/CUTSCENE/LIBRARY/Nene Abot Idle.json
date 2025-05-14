@@ -1,0 +1,33 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":30,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Nene Idle",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-400.2,"y":-262.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,-594.15,-500.25]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":30,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Abot System",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-380.45,"y":-10.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,-786.25,-190]
+}}]}
+]}
+]}

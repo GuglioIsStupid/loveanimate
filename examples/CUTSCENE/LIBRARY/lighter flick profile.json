@@ -1,0 +1,150 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":6,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":116.45,"y":274.65},
+"loop":"loop",
+"Matrix":[0.834,-0.549,0.549,0.834,0,120.75]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":6,
+"symbolType":"graphic",
+"transformationPoint":{"x":121.5,"y":276.7},
+"loop":"loop",
+"Matrix":[0.76,-0.648,0.623,0.779,-8.4,134.5]
+}}]},{
+"index":8,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":97.95,"y":260.45},
+"loop":"loop",
+"Matrix":[0.881,-0.469,0.469,0.881,24.85,131.6]
+}}]},{
+"index":10,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":109.9,"y":247.45},
+"loop":"loop",
+"Matrix":[0.868,-0.492,0.492,0.868,20.3,131.3]
+}}]},{
+"index":13,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":178,"y":187.45},
+"loop":"loop",
+"Matrix":[0.861,-0.504,0.504,0.861,18.75,132.55]
+}}]},{
+"index":15,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":116.45,"y":274.65},
+"loop":"loop",
+"Matrix":[0.834,-0.549,0.549,0.834,0,120.75]
+}}]},{
+"index":17,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":6,
+"symbolType":"graphic",
+"transformationPoint":{"x":121.5,"y":276.7},
+"loop":"loop",
+"Matrix":[0.76,-0.648,0.623,0.779,-8.4,134.5]
+}}]},{
+"index":19,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":97.95,"y":260.45},
+"loop":"loop",
+"Matrix":[0.881,-0.469,0.469,0.881,24.85,131.6]
+}}]},{
+"index":21,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":109.9,"y":247.45},
+"loop":"loop",
+"Matrix":[0.868,-0.492,0.492,0.868,20.3,131.3]
+}}]},{
+"index":24,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand lighter side click",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":178,"y":187.45},
+"loop":"loop",
+"Matrix":[0.861,-0.504,0.504,0.861,18.75,132.55]
+}}]},{
+"index":26,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":115.45,"y":273.65},
+"loop":"loop",
+"Matrix":[0.816,-0.575,0.575,0.816,-5.75,123.45]
+}}]},{
+"index":28,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":116.45,"y":274.65},
+"loop":"loop",
+"Matrix":[0.831,-0.553,0.553,0.831,-0.85,121.4]
+}}]},{
+"index":31,
+"duration":6,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hnd lighter side",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":116.45,"y":274.65},
+"loop":"loop",
+"Matrix":[0.834,-0.549,0.549,0.834,0,120.75]
+}}]}
+]}
+]}

@@ -1,4 +1,21 @@
+local Bit = require("loveanimate.libs.Bit")
 local Classic = require("loveanimate.libs.Classic")
+
+local prints = 0
+
+local lprint = print
+local function print(...)
+    prints = prints + 1
+    lprint("#" .. prints .. " - " .. ...)
+end
+
+local function intToRGB(int)
+	return
+		Bit.band(Bit.rshift(int, 16), 0xFF) / 255,
+		Bit.band(Bit.rshift(int, 8), 0xFF) / 255,
+		Bit.band(int, 0xFF) / 255,
+		Bit.band(Bit.rshift(int, 24), 0xFF) / 255
+end
 
 ---
 --- @class love.animate.AnimateAtlas
@@ -52,6 +69,9 @@ function AnimateAtlas:load(folder)
 end
 
 function AnimateAtlas:getTimelineLength(timeline)
+    if timeline.data then
+        timeline = timeline.data.ANIMATION.TIMELINE
+    end
     local longest = 0
     local timelineLayers = timeline.LAYERS
     for i = #timelineLayers, 1, -1 do
@@ -77,7 +97,7 @@ end
 --- @param  frame     integer
 --- @param  matrix    love.Transform
 ---
-function AnimateAtlas:drawTimeline(timeline, frame, matrix)
+function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
     local timelineLayers = timeline.LAYERS
     for i = #timelineLayers, 1, -1 do
         local layer = timelineLayers[i]
@@ -97,51 +117,105 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix)
                         local symbol = element.SYMBOL_Instance
                         local symbolName = symbol.SYMBOL_name
 
+                        -- get the symbol's first frame
                         local firstFrame = symbol.firstFrame
-                        firstFrame = firstFrame + (frame - index)
+                        if firstFrame == nil then
+                            firstFrame = 0
+                        end
+                        -- get the frame index we want to possibly render
+                        local frameIndex = firstFrame
+                        frameIndex = frameIndex + (frame - index)
 
+                        local symbolType = symbol.symbolType
+                        if symbolType == "movieclip" or symbolType == "MC" then
+                            -- movie clips can only display first frame
+                            frameIndex = 0
+                        end
                         local loopMode = symbol.loop
                         local symbolTimeline = self.libraries[symbolName]
                         local length = self:getTimelineLength(symbolTimeline)
-                        if loopMode == "loop" then
-                            if firstFrame < 0 then
-                                firstFrame = length + firstFrame
+
+                        if loopMode == "loop" or loopMode == "LP" then
+                            -- wrap around back to 0
+                            if frameIndex < 0 then
+                                frameIndex = length - 1
                             end
-                            
-                            firstFrame = firstFrame % length
-                        elseif loopMode == "playonce" then
-                            if firstFrame < 0 then
-                                firstFrame = 0
+                            if frameIndex > length - 1 then
+                                frameIndex = 0
+                            end
+                        
+                        elseif loopMode == "playonce" or loopMode == "PO" then
+                            -- stop at last frame
+                            if frameIndex < 0 then
+                                frameIndex = 0
+                            end
+                            if frameIndex > length - 1 then
+                                frameIndex = length - 1
                             end
 
-                            if firstFrame > length - 1 then
-                                firstFrame = length - 1
-                            end
+                        elseif loopMode == "singleframe" or loopMode == "SF" then
+                            -- stop at first frame
+                            frameIndex = firstFrame
                         end
 
                         local symbolMatrixRaw = symbol.Matrix
                         local symbolMatrix = love.math.newTransform()
                         symbolMatrix:setMatrix(
-                            symbolMatrixRaw[1], symbolMatrixRaw[3], symbolMatrixRaw[5], 0,
-                            symbolMatrixRaw[2], symbolMatrixRaw[4], symbolMatrixRaw[6], 0,
-                            0, 0, 1, 0,
-                            0, 0, 0, 1
+                            "column", -- OKAY MAKE SURE THIS IS HERE LOL
+                            symbolMatrixRaw[1], -- a
+                            symbolMatrixRaw[2], -- b
+                            0, 0,
+                            symbolMatrixRaw[3], -- c
+                            symbolMatrixRaw[4], -- d
+                            0, 0, 0, 0, 1, 0,
+                            symbolMatrixRaw[5], -- tx
+                            symbolMatrixRaw[6], -- ty
+                            0, 1
                         )
-                        self:drawTimeline(symbolTimeline, firstFrame, matrix:clone():apply(symbolMatrix))
+                        if not colorTransform then
+                            colorTransform = symbol.color
+                        end
+                        if colorTransform then
+                            for key, value in pairs(colorTransform) do
+                                if type(value) == "number" then
+                                    if string.endsWith(key, "Offset") then
+                                        -- is offset
+                                        colorTransform[key] = value + symbol.color[key]
+                                    else
+                                        -- assume multiplier
+                                        colorTransform[key] = value * symbol.color[key]
+                                    end
+                                end
+                            end
+                        end
+                        self:drawTimeline(symbolTimeline, frameIndex, matrix:clone():apply(symbolMatrix), colorTransform)
                     
                     elseif element.ATLAS_SPRITE_instance then
+                        -- store thecolor transform mode somewhere
+                        local colorTransformMode = colorTransform and colorTransform.mode or nil
+                        if not colorTransformMode then
+                            colorTransformMode = "none"
+                        end
+                        --- @type "brightness"|"tint"|"alpha"|"advanced"|"none"
+                        colorTransformMode = colorTransformMode:lower()
+
                         local atlasSprite = element.ATLAS_SPRITE_instance
                         local name = atlasSprite.name
                         
                         local spriteMatrixRaw = atlasSprite.Matrix
                         local spriteMatrix = love.math.newTransform()
                         spriteMatrix:setMatrix(
-                            spriteMatrixRaw[1], spriteMatrixRaw[3], spriteMatrixRaw[5], 0,
-                            spriteMatrixRaw[2], spriteMatrixRaw[4], spriteMatrixRaw[6], 0,
-                            0, 0, 1, 0,
-                            0, 0, 0, 1
+                            "column", -- OKAY MAKE SURE THIS IS HERE LOL x2
+                            spriteMatrixRaw[1], -- a
+                            spriteMatrixRaw[2], -- b
+                            0, 0,
+                            spriteMatrixRaw[3], -- c
+                            spriteMatrixRaw[4], -- d
+                            0, 0, 0, 0, 1, 0,
+                            spriteMatrixRaw[5], -- tx
+                            spriteMatrixRaw[6], -- ty
+                            0, 1
                         )
-
                         local spritemaps = self.spritemaps
                         for l = 1, #spritemaps do
                             local spritemap = spritemaps[l]
@@ -155,7 +229,41 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix)
                                         drawMatrix:rotate(-90)
                                         drawMatrix:translate(0, sprite.w)
                                     end
+                                    local r, g, b, a = love.graphics.getColor()
+                                    -- TODO: i don't think this is working right
+                                    if colorTransformMode == "brightness" then
+                                        local brightness = colorTransform["Brightness"]
+                                        love.graphics.setColor(
+                                            (r * (1 - math.abs(brightness))) + brightness,
+                                            (g * (1 - math.abs(brightness))) + brightness,
+                                            (b * (1 - math.abs(brightness))) + brightness,
+                                            a
+                                        )
+                                    elseif colorTransformMode == "tint" then
+                                        local tintColor = tonumber("0xFF" + colorTransform["TintColor"]:sub(2))
+                                        local tintR, tintG, tintB = intToRGB(tintColor)
+                                        
+                                        local multiplier = colorTransform["TintMultiplier"]
+                                        love.graphics.setColor(
+                                            (r * (1 - multiplier)) + (tintR * multiplier),
+                                            (g * (1 - multiplier)) + (tintG * multiplier),
+                                            (b * (1 - multiplier)) + (tintB * multiplier),
+                                            a
+                                        )
+                                    elseif colorTransformMode == "alpha" then
+                                        local alphaMultiplier = colorTransform["alphaMultiplier"]
+                                        love.graphics.setColor(r, g, b, a * alphaMultiplier)
+                                    
+                                    elseif colorTransformMode == "advanced" then
+                                        love.graphics.setColor(
+                                            (r * colorTransform["RedMultiplier"]) + colorTransform["redOffset"],
+                                            (g * colorTransform["greenMultiplier"]) + colorTransform["greenOffset"],
+                                            (b * colorTransform["blueMultiplier"]) + colorTransform["blueOffset"],
+                                            (a * colorTransform["alphaMultiplier"]) + colorTransform["AlphaOffset"]
+                                        )
+                                    end
                                     love.graphics.draw(spritemap.texture, quad, drawMatrix)
+                                    love.graphics.setColor(r, g, b, a)
                                     break
                                 end
                             end
@@ -169,10 +277,26 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix)
     end
 end
 
+function AnimateAtlas:getSymbolTimeline(symbol)
+    if not symbol then
+        symbol = ""
+    end
+    local timeline = self.libraries[self.symbol]
+    if not timeline then
+        timeline = self.timeline
+    end
+    return timeline
+end
+
 function AnimateAtlas:draw(x, y)
     local identity = love.math.newTransform()
     identity:translate(x, y)
-    self:drawTimeline(self.timeline.data.ANIMATION.TIMELINE, self.frame, identity)
+
+    local timeline = self:getSymbolTimeline(self.symbol)
+    if timeline.data then
+        timeline = timeline.data.ANIMATION.TIMELINE
+    end
+    self:drawTimeline(timeline, self.frame, identity, nil)
 end
 
 return AnimateAtlas

@@ -13,3 +13,8 @@ require("loveanimate")
 
 -- TODO: make this example
 ```
+
+## 📜 TODO
+[] Color Transform
+[] Optimized Atlas Support
+[] Regular AA Atlas Support

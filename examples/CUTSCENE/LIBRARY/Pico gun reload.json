@@ -1,0 +1,211 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":290.75,"y":202.65},
+"loop":"loop",
+"Matrix":[0.991,-0.213,0.12,0.982,247.35,184.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":209.75,"y":298.3},
+"loop":"loop",
+"Matrix":[0.992,-0.122,0.122,0.992,95.6,277]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":249.5,"y":309.25},
+"loop":"loop",
+"Matrix":[0.98,-0.197,0.197,0.98,181.2,259.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":304.55,"y":278},
+"loop":"loop",
+"Matrix":[0.942,0.301,-0.238,0.979,275.15,221.35]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":290.75,"y":202.65},
+"loop":"loop",
+"Matrix":[0.991,-0.213,0.12,0.982,247.35,184.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":209.75,"y":298.3},
+"loop":"loop",
+"Matrix":[0.992,-0.122,0.122,0.992,95.6,277]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":251.15,"y":306.5},
+"loop":"loop",
+"Matrix":[0.98,-0.197,0.197,0.98,182.85,256.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":306.2,"y":275.25},
+"loop":"loop",
+"Matrix":[0.942,0.301,-0.238,0.979,276.8,218.6]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":292.7,"y":205.6},
+"loop":"loop",
+"Matrix":[0.998,-0.122,-0.035,1.005,251.7,190.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":172,"y":373.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,92.15,266.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":245.95,"y":330.85},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,187.45,269.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":305.75,"y":309.6},
+"loop":"loop",
+"Matrix":[0.875,0.462,-0.407,0.922,286.65,248.65]
+}}]},{
+"index":3,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico arm reload",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":303.5,"y":263.3},
+"loop":"loop",
+"Matrix":[1,-0.043,0,1,251.55,182.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun aimed down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":172,"y":373.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,92.15,266.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":247.5,"y":328.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,190.3,265.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic side",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":307.7,"y":308.35},
+"loop":"loop",
+"Matrix":[0.865,0.481,-0.427,0.913,289.95,247]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":233.9,"y":137.25},
+"loop":"loop",
+"Matrix":[0.965,-0.256,0.256,0.965,79.1,64.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload face snap",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":205.8,"y":196.35},
+"loop":"loop",
+"Matrix":[0.996,-0.083,0.083,0.996,135.85,150.65]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":237.9,"y":131.45},
+"loop":"loop",
+"Matrix":[0.984,-0.175,0.175,0.984,89.7,45.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico reload face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":208.9,"y":188.7},
+"loop":"loop",
+"Matrix":[0.995,-0.092,0.092,0.995,134,147.3]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,-4,207.1],
+"name":"172"
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico body reload",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":217.9,"y":331.35},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,197.25]
+}}]}
+]}
+]}

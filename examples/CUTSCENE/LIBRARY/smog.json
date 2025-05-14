@@ -1,0 +1,16 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"weekend1 smoke.png",
+"symbolType":"movieclip",
+"transformationPoint":{"x":1380.5,"y":562.5},
+"Matrix":[1,0,0,1,0,0]
+}}]}
+]}
+]}

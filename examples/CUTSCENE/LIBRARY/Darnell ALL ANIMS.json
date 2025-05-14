@@ -1,0 +1,199 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":32,
+"elements":[]
+},{
+"name":"Left Flame Loop",
+"index":32,
+"duration":12,
+"elements":[]
+},{
+"name":"Down Flame Loop",
+"index":44,
+"duration":12,
+"elements":[]
+},{
+"name":"Right Flame Loop",
+"index":56,
+"duration":12,
+"elements":[]
+},{
+"name":"Up Flame Loop",
+"index":68,
+"duration":98,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"name":"Idle",
+"index":0,
+"duration":28,
+"elements":[]
+},{
+"name":"Pose Left",
+"index":28,
+"duration":12,
+"elements":[]
+},{
+"name":"Pose Down",
+"index":40,
+"duration":12,
+"elements":[]
+},{
+"name":"Pose Right",
+"index":52,
+"duration":12,
+"elements":[]
+},{
+"name":"Pose Up",
+"index":64,
+"duration":12,
+"elements":[]
+},{
+"name":"Laugh",
+"index":76,
+"duration":12,
+"elements":[]
+},{
+"name":"Light Can",
+"index":88,
+"duration":15,
+"elements":[]
+},{
+"name":"Kick Up",
+"index":103,
+"duration":12,
+"elements":[]
+},{
+"name":"Knee Forward",
+"index":115,
+"duration":11,
+"elements":[]
+},{
+"name":"Gets Pissed",
+"index":126,
+"duration":40,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":28,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell Idle",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-244.15,"y":-63.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,-436.1,-306.9]
+}}]},{
+"index":28,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell pose right",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-264.05,"y":-64.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,-467.95,-309.5]
+}}]},{
+"index":40,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell Pose Down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-232.6,"y":-55.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-424.55,-297.65]
+}}]},{
+"index":52,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell pose left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-244.05,"y":-61.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-436,-304.4]
+}}]},{
+"index":64,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell pose up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-225.6,"y":-84.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,-420.85,-349.3]
+}}]},{
+"index":76,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell laugh",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-240.6,"y":-63.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,-434.2,-305.95]
+}}]},{
+"index":88,
+"duration":15,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell lighting can",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-210.95,"y":-38.35},
+"loop":"loop",
+"Matrix":[1,0,0,1,-411,-276.65]
+}}]},{
+"index":103,
+"duration":12,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell can kick up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-238.15,"y":-60},
+"loop":"loop",
+"Matrix":[1,0,0,1,-454.5,-317.65]
+}}]},{
+"index":115,
+"duration":11,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell knee action",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-208.4,"y":-41.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-404.75,-275]
+}}]},{
+"index":126,
+"duration":40,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"Darnell Gets Pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-244.15,"y":-63.6},
+"loop":"loop",
+"Matrix":[1,0,0,1,-436.1,-306.9]
+}}]}
+]}
+]}

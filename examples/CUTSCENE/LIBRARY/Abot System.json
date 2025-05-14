@@ -1,0 +1,248 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot speaker",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":754.95,"y":115.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,665.95,43.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot speaker",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":59.8,"y":108.85},
+"loop":"loop",
+"Matrix":[-1,0,0,1,148.8,36.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A bot chest boomin",
+"firstFrame":15,
+"symbolType":"graphic",
+"transformationPoint":{"x":405.8,"y":169.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,144,1.9]
+}}]},{
+"index":1,
+"duration":15,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot speaker",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":754.95,"y":115.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,665.95,43.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"abot speaker",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":59.8,"y":108.85},
+"loop":"loop",
+"Matrix":[-1,0,0,1,148.8,36.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A bot chest boomin",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":405.8,"y":169.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,144,1.9]
+}}]}
+]},{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"wires",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":688.65,"y":245.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,661.45,202.65]
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"wires",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":686.65,"y":214.8},
+"loop":"loop",
+"Matrix":[1.017,0,0,1.017,661,203.45]
+}}]},{
+"index":3,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"wires",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":688.65,"y":245.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,661.45,202.65]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":658.65,"y":135.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,639,60.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":120.1,"y":138.45},
+"loop":"loop",
+"Matrix":[-1,0,0,1,175.75,53.2]
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":658.65,"y":135.95},
+"loop":"loop",
+"Matrix":[1.02,0,0,1.02,638.6,58.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":120.1,"y":138.45},
+"loop":"loop",
+"Matrix":[-1.023,0,0,1.023,177.05,51.2]
+}}]},{
+"index":3,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":658.65,"y":135.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,639,60.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"a bot arm wheel",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":120.1,"y":138.45},
+"loop":"loop",
+"Matrix":[-1,0,0,1,175.75,53.2]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"tube wire",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":759.65,"y":263.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,707.7,203.6]
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"tube wire",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":724.65,"y":303.3},
+"loop":"loop",
+"Matrix":[1,0,-0.015,1,709.2,203.6]
+}}]},{
+"index":3,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"tube wire",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":759.65,"y":263.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,707.7,203.6]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A BOT head partial",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":119.4,"y":226.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,95.6]
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A BOT head partial",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":157.4,"y":311.9},
+"loop":"loop",
+"Matrix":[1,-0.009,0.009,1,-2.95,97.05]
+}}]},{
+"index":3,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"A BOT head partial",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":119.4,"y":226.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,95.6]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":16,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"rubble",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":697.75,"y":320.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,655.2,310.25]
+}}]}
+]}
+]}

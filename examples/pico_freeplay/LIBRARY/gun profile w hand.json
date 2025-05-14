@@ -1,0 +1,26 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand gun profile",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":132.9,"y":113.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,94.45,83.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun profile",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":89.85,"y":48.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,-0.2,0.35]
+}}]}
+]}
+]}

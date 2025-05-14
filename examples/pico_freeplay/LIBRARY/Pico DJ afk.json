@@ -1,0 +1,2353 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 20",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi profile angle down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-371.7,"y":167.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,-468.1,1.6]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi turn 2 angle down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-375.5,"y":148.8},
+"loop":"loop",
+"Matrix":[0.971,0.235,-0.235,0.971,-426.55,-15.15]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-374,"y":166.7},
+"loop":"loop",
+"Matrix":[1.042,-0.181,0.168,0.983,-475.9,15.15]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun under back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-372.15,"y":172.55},
+"loop":"loop",
+"Matrix":[0.986,-0.157,0.157,0.986,-461.45,8.7]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi profile",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-377.95,"y":162.6},
+"loop":"loop",
+"Matrix":[0.957,0.284,-0.284,0.957,-420.1,-21.65]
+}}]},{
+"index":8,
+"duration":3,
+"elements":[]
+},{
+"index":11,
+"duration":1,
+"elements":[]
+},{
+"index":12,
+"duration":16,
+"elements":[]
+},{
+"index":28,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-379.85,"y":116.2},
+"loop":"loop",
+"Matrix":[0.966,-0.255,0.255,0.966,-406.5,111.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-545.45,"y":144.3},
+"loop":"loop",
+"Matrix":[0.996,0.069,-0.069,0.996,-670.4,16.3]
+}}]},{
+"index":30,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-384.5,"y":125.25},
+"loop":"loop",
+"Matrix":[0.994,-0.11,0.11,0.994,-410.05,118.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-539.2,"y":150.05},
+"loop":"loop",
+"Matrix":[0.999,0.034,-0.034,0.999,-663.7,33.95]
+}}]},{
+"index":33,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-388.35,"y":125.75},
+"loop":"loop",
+"Matrix":[0.998,-0.067,0.067,0.998,-410.95,121]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-536,"y":152.45},
+"loop":"loop",
+"Matrix":[0.999,0.036,-0.036,0.999,-661,37.95]
+}}]},{
+"index":36,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-385.45,"y":128.35},
+"loop":"loop",
+"Matrix":[0.999,-0.04,0.04,0.999,-410.4,122.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-536.65,"y":163.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-663,44.3]
+}}]},{
+"index":40,
+"duration":41,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-369.45,"y":157.35},
+"loop":"loop",
+"Matrix":[1,0,0,1,-410.15,121.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-589.65,"y":122.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-662.5,44.8]
+}}]},{
+"index":81,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-369.45,"y":156.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,-410.15,121]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-589.15,"y":122.75},
+"loop":"loop",
+"Matrix":[1,0.014,-0.014,1,-660.95,44.25]
+}}]},{
+"index":84,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-386,"y":121.4},
+"loop":"loop",
+"Matrix":[1,0.004,-0.004,1,-410.25,118.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-532.25,"y":163.2},
+"loop":"loop",
+"Matrix":[0.998,0.057,-0.057,0.998,-659.1,43.7]
+}}]},{
+"index":86,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand limp",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-388.05,"y":113.1},
+"loop":"loop",
+"Matrix":[0.999,-0.008,0.008,0.999,-412.35,110.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun almost front facing",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-536.45,"y":170.2},
+"loop":"loop",
+"Matrix":[0.994,0.106,-0.106,0.994,-657.25,44.75]
+}}]},{
+"index":87,
+"duration":26,
+"elements":[]
+},{
+"index":113,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-373.2,"y":1.35},
+"loop":"singleframe",
+"Matrix":[1.093,-0.091,0.071,0.85,-454.2,-26.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-371,"y":156.9},
+"loop":"loop",
+"Matrix":[1.324,-0.029,-0.04,0.93,-463.3,13.25]
+}}]}
+]},{
+"Layer_name":"Layer 15",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-386.7,"y":-15.65},
+"loop":"singleframe",
+"Matrix":[0.993,0.105,-0.105,0.993,-453.2,-62.85]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-358.35,"y":-7.9},
+"loop":"singleframe",
+"Matrix":[0.907,-0.414,0.414,0.907,-439.45,-14.75]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-415.15,"y":-9.6},
+"loop":"singleframe",
+"Matrix":[0.996,0.035,-0.035,0.996,-484.55,-52]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-395.1,"y":-10.85},
+"loop":"singleframe",
+"Matrix":[0.989,0.131,-0.131,0.989,-460.25,-59.75]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-319.95,"y":-2.75},
+"loop":"singleframe",
+"Matrix":[0.887,0.458,-0.458,0.887,-364.85,-70.8]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi turn 2 angle down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-429.45,"y":144.65},
+"loop":"loop",
+"Matrix":[1.237,0.174,0.215,0.857,-570.25,3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand on gun",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-343.85,"y":43.25},
+"loop":"singleframe",
+"Matrix":[0.165,0.983,-0.983,0.165,-316.35,-33.4]
+}}]},{
+"index":9,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-521.8,"y":48.45},
+"loop":"loop",
+"Matrix":[0.836,-0.286,0.394,1.159,-567.8,-53.7]
+}}]},{
+"index":11,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-525.8,"y":29.85},
+"loop":"loop",
+"Matrix":[1.242,-0.531,0.293,0.69,-567.5,-26.7]
+}}]},{
+"index":13,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-498.35,"y":-15.65},
+"loop":"loop",
+"Matrix":[1.053,-0.056,0.051,0.992,-515.65,-105.5]
+}}]},{
+"index":15,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-494.95,"y":-19.05},
+"loop":"loop",
+"Matrix":[1.053,0.041,-0.04,0.993,-503.95,-110.1]
+}}]},{
+"index":17,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-487.75,"y":-17.35},
+"loop":"loop",
+"Matrix":[1.047,0.114,-0.109,0.986,-490.45,-108.65]
+}}]},{
+"index":19,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-464.75,"y":10.75},
+"loop":"loop",
+"Matrix":[1.002,0.321,-0.304,0.944,-449.2,-79.15]
+}}]},{
+"index":21,
+"duration":94,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 13",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico head downward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-513.5,"y":45.45},
+"loop":"loop",
+"Matrix":[0.987,-0.157,0.157,0.987,-612.85,-25.9]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico head downward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-513.05,"y":53.9},
+"loop":"loop",
+"Matrix":[0.977,-0.211,0.211,0.977,-615.85,-26.55]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico head downward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-509.05,"y":51.4},
+"loop":"loop",
+"Matrix":[0.992,-0.113,0.113,0.992,-603.2,-38.75]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head frontal pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-491.9,"y":44.35},
+"loop":"loop",
+"Matrix":[1,0.014,-0.014,1,-582.7,-53.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face puzzled pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-504.05,"y":85.15},
+"loop":"loop",
+"Matrix":[1,0.014,-0.014,1,-557.5,29.95]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head frontal pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-486.95,"y":47.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,-579.1,-49.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face puzzled pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-494.7,"y":89.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-548.95,34.65]
+}}]},{
+"index":9,
+"duration":106,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 19",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-592.75,"y":113.25},
+"loop":"loop",
+"Matrix":[0.99,0.137,-0.137,0.99,-616.65,-94.65]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-592.7,"y":103.25},
+"loop":"loop",
+"Matrix":[0.982,0.185,-0.185,0.982,-608,-95.55]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-596.2,"y":107.25},
+"loop":"loop",
+"Matrix":[0.979,0.198,-0.198,0.979,-608.7,-91.75]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 3",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-552.65,"y":130.9},
+"loop":"singleframe",
+"Matrix":[-0.524,-0.433,-0.584,0.423,-493.45,105.15]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 3",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-540.75,"y":139.75},
+"loop":"singleframe",
+"Matrix":[-0.569,-0.373,-0.534,0.485,-484.7,107.6]
+}}]},{
+"index":9,
+"duration":106,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":115,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"spinning disk",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-552.1,"y":187.5},
+"loop":"loop",
+"Matrix":[0.989,0.135,-0.135,0.989,-610.15,152.65]
+}}]}
+]},{
+"Layer_name":"Layer 25",
+"Frames":[
+{
+"index":0,
+"duration":115,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"sparks",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-376.4,"y":169.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,-387,163]
+}}]}
+]},{
+"Layer_name":"Layer 7",
+"Frames":[
+{
+"index":0,
+"duration":115,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"spinning disk",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-383.85,"y":188.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,-446.15,161.3]
+}}]}
+]},{
+"Layer_name":"turntable",
+"Frames":[
+{
+"index":0,
+"duration":115,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"turn table",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-452.55,"y":270.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-649.4,158]
+}}]}
+]},{
+"Layer_name":"Layer 23",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-560.6,"y":129.25},
+"loop":"loop",
+"Matrix":[0.993,0.11,-0.11,0.993,-592.1,98]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-593.15,"y":150.1},
+"loop":"loop",
+"Matrix":[0.984,0.174,-0.174,0.984,-616.85,73.45]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-562.3,"y":131.6},
+"loop":"loop",
+"Matrix":[0.985,0.167,-0.167,0.985,-591.95,98.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-596,"y":150.6},
+"loop":"loop",
+"Matrix":[0.972,0.231,-0.231,0.972,-615.25,72.7]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-561.55,"y":130.7},
+"loop":"loop",
+"Matrix":[0.999,0.026,-0.026,0.999,-595.5,102.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-591.6,"y":151.35},
+"loop":"loop",
+"Matrix":[0.996,0.074,-0.074,0.996,-623.6,79.9]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-500.05,"y":127.35},
+"loop":"loop",
+"Matrix":[0.204,-0.972,0.972,0.204,-577.05,148.5]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-488.55,"y":128.65},
+"loop":"loop",
+"Matrix":[0.157,-0.981,0.981,0.157,-564.45,153.55]
+}}]},{
+"index":9,
+"duration":92,
+"elements":[]
+},{
+"index":101,
+"duration":1,
+"elements":[]
+},{
+"index":102,
+"duration":13,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 24",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-421.85,"y":79.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-460.5,49.6]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-421.85,"y":79.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-460.5,49.6]
+}}]},{
+"index":6,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-434.95,"y":119.3},
+"loop":"loop",
+"Matrix":[-0.95,-0.3,0.3,-0.95,-384.45,142.25]
+}}]},{
+"index":9,
+"duration":12,
+"elements":[]
+},{
+"index":21,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-443.75,"y":75},
+"loop":"loop",
+"Matrix":[0.816,0.663,-0.626,0.768,-396.65,-3]
+}}]},{
+"index":22,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun semi back left",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-439,"y":147},
+"loop":"loop",
+"Matrix":[0.55,0.895,-0.844,0.517,-368.85,89]
+}}]},{
+"index":23,
+"duration":75,
+"elements":[]
+},{
+"index":98,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,-448.75,128.5],
+"name":"11"
+}}]},{
+"index":99,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun top faced",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-397.8,"y":193.25},
+"loop":"loop",
+"Matrix":[0.309,-0.734,0.753,0.253,-484.2,253.5]
+}}]},{
+"index":100,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun top faced",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-391.8,"y":89.2},
+"loop":"loop",
+"Matrix":[0.283,-0.833,0.739,0.191,-474.45,164.35]
+}}]},{
+"index":101,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun top faced",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-368.85,"y":-63.8},
+"loop":"loop",
+"Matrix":[0.392,-1.153,0.519,0.134,-447.45,49.35]
+}}]},{
+"index":102,
+"duration":13,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 22",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-414.8,"y":222.05},
+"loop":"loop",
+"Matrix":[1.019,-0.041,0.039,0.97,-545.45,89.2]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-411.8,"y":218.05},
+"loop":"loop",
+"Matrix":[1.018,-0.068,0.065,0.969,-545.95,88.75]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-429.35,"y":198.7},
+"loop":"loop",
+"Matrix":[1,-0.023,0.023,1,-541.7,81.6]
+}}]},{
+"index":6,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-405.8,"y":213.85},
+"loop":"loop",
+"Matrix":[1.046,-0.084,0.076,0.947,-545.1,89.6]
+}}]},{
+"index":8,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-459.55,"y":171.45},
+"loop":"loop",
+"Matrix":[1.048,-0.056,0.051,0.949,-541.25,88.5]
+}}]},{
+"index":9,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-612.3,"y":144.3},
+"loop":"loop",
+"Matrix":[0.99,-0.111,0.111,0.99,-616.5,96.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-604.45,"y":146.15},
+"loop":"loop",
+"Matrix":[0.863,-0.497,0.497,0.863,-671.8,102.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-633.85,"y":109.75},
+"loop":"loop",
+"Matrix":[0.855,-0.511,0.511,0.855,-782.15,-36.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-470.25,"y":174.25},
+"loop":"loop",
+"Matrix":[0.968,0,0.319,1.048,-560.55,74.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-470.4,"y":72.25},
+"loop":"loop",
+"Matrix":[1.005,0.111,-0.103,0.935,-464.8,38.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit snap pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-527.5,"y":93.95},
+"loop":"loop",
+"Matrix":[1,-0.004,0.004,1,-678.05,-87.6]
+}}]},{
+"index":11,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-479.75,"y":127.4},
+"loop":"loop",
+"Matrix":[1,0.014,0.117,1.002,-542.6,78.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-379.05,"y":84.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-466.4,36]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-595.85,"y":164.35},
+"loop":"loop",
+"Matrix":[0.973,-0.219,0.219,0.973,-605.25,117.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-588,"y":165.15},
+"loop":"loop",
+"Matrix":[0.892,-0.445,0.445,0.892,-652.65,117.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-614,"y":125.95},
+"loop":"loop",
+"Matrix":[0.913,-0.4,0.4,0.913,-742.75,-38.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-503.65,"y":105.75},
+"loop":"loop",
+"Matrix":[0.963,-0.266,0.266,0.963,-689.8,-30.05]
+}}]},{
+"index":13,
+"duration":5,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-479.75,"y":127.4},
+"loop":"loop",
+"Matrix":[1,0.014,0.117,1.002,-542.6,78.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-379.05,"y":84.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,-466.4,36]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-595.85,"y":164.35},
+"loop":"loop",
+"Matrix":[0.973,-0.219,0.219,0.973,-605.25,117.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-588,"y":165.15},
+"loop":"loop",
+"Matrix":[0.892,-0.445,0.445,0.892,-652.65,117.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-614,"y":125.95},
+"loop":"loop",
+"Matrix":[0.913,-0.4,0.4,0.913,-742.75,-38.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-500.65,"y":104.75},
+"loop":"loop",
+"Matrix":[0.97,-0.239,0.239,0.97,-683.05,-36]
+}}]},{
+"index":18,
+"duration":5,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-479.75,"y":127.4},
+"loop":"loop",
+"Matrix":[1,0.014,0.117,1.002,-542.6,78.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-469.05,"y":86.25},
+"loop":"loop",
+"Matrix":[1,0.013,-0.013,1,-465.25,36.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-594.2,"y":166.35},
+"loop":"loop",
+"Matrix":[0.965,-0.249,0.249,0.965,-605.05,119.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-586.25,"y":166.8},
+"loop":"loop",
+"Matrix":[0.869,-0.487,0.487,0.869,-653.05,122.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-614.1,"y":130.5},
+"loop":"loop",
+"Matrix":[0.889,-0.451,0.451,0.889,-752.05,-26.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-498.65,"y":104.75},
+"loop":"loop",
+"Matrix":[0.964,-0.26,0.26,0.964,-683.9,-32.1]
+}}]},{
+"index":23,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-477.4,"y":129.35},
+"loop":"loop",
+"Matrix":[0.999,0.041,0.089,1.004,-538.9,78.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-375.55,"y":89.55},
+"loop":"loop",
+"Matrix":[1,0.028,-0.028,1,-461.5,38.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-589.1,"y":166.65},
+"loop":"loop",
+"Matrix":[0.967,-0.243,0.243,0.967,-599.7,120]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-580.95,"y":168.1},
+"loop":"loop",
+"Matrix":[0.863,-0.497,0.497,0.863,-648.3,124.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-608.25,"y":134.6},
+"loop":"loop",
+"Matrix":[0.868,-0.489,0.489,0.868,-752.8,-16]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-493.65,"y":105.95},
+"loop":"loop",
+"Matrix":[0.965,-0.259,0.259,0.965,-678.7,-31.3]
+}}]},{
+"index":26,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm splaid out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-466.15,"y":103.3},
+"loop":"loop",
+"Matrix":[0.996,0.086,-0.086,0.996,-457,50.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-476,"y":132.45},
+"loop":"loop",
+"Matrix":[0.997,0.069,0.062,1.006,-536.1,79.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-583.55,"y":172.7},
+"loop":"loop",
+"Matrix":[0.959,-0.272,0.272,0.959,-595.5,126.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-573.85,"y":174.75},
+"loop":"loop",
+"Matrix":[0.826,-0.556,0.556,0.826,-644,136.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-601.4,"y":150.3},
+"loop":"loop",
+"Matrix":[0.814,-0.574,0.574,0.814,-760.25,15.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face hit pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-480.6,"y":104.35},
+"loop":"loop",
+"Matrix":[0.953,-0.297,0.297,0.953,-670.9,-25.1]
+}}]},{
+"index":28,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-407.3,"y":132.9},
+"loop":"loop",
+"Matrix":[0.996,-0.083,0.083,0.996,-455.95,106.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-467.05,"y":196.4},
+"loop":"loop",
+"Matrix":[-1.048,0.114,0,0.951,-408.4,76.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-526.75,"y":125.6},
+"loop":"loop",
+"Matrix":[0.98,0.196,-0.196,0.98,-550.05,85.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-470.85,"y":30.7},
+"loop":"loop",
+"Matrix":[0.925,-0.132,0.04,1.055,-571.7,-37.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-434,"y":62.15},
+"loop":"loop",
+"Matrix":[0.987,-0.159,0.159,0.987,-485.05,32.6]
+}}]},{
+"index":30,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-411.8,"y":142.9},
+"loop":"loop",
+"Matrix":[0.999,-0.035,0.035,0.999,-459.05,114]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-475.95,"y":210.35},
+"loop":"loop",
+"Matrix":[-1.045,-0.089,-0.081,0.947,-401.95,95.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-521.15,"y":131.9},
+"loop":"loop",
+"Matrix":[0.998,0.065,-0.065,0.998,-549.5,95.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-461.1,"y":37.35},
+"loop":"loop",
+"Matrix":[0.934,-0.025,-0.081,1.053,-553.55,-42.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-426.1,"y":75.85},
+"loop":"loop",
+"Matrix":[0.999,-0.045,0.045,0.999,-473.6,40.65]
+}}]},{
+"index":33,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-413.1,"y":146.1},
+"loop":"loop",
+"Matrix":[0.999,-0.032,0.032,0.999,-460.25,117.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-542,"y":219.4},
+"loop":"loop",
+"Matrix":[-1.043,-0.112,-0.102,0.945,-399.45,98.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-520.4,"y":134.8},
+"loop":"loop",
+"Matrix":[0.999,0.036,-0.036,0.999,-549.8,99.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-458.55,"y":39.4},
+"loop":"loop",
+"Matrix":[0.935,0.004,-0.114,1.05,-548.45,-43.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423.8,"y":80.95},
+"loop":"loop",
+"Matrix":[1,-0.013,0.013,1,-470.1,44.3]
+}}]},{
+"index":36,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-413.3,"y":147.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-459.55,116.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-542,"y":219.4},
+"loop":"loop",
+"Matrix":[-1.043,-0.112,-0.102,0.945,-399.45,98.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-519.5,"y":135.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,-550.15,101.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-457.9,"y":40},
+"loop":"loop",
+"Matrix":[0.935,0.013,-0.123,1.049,-547.1,-43.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423.55,"y":81.85},
+"loop":"loop",
+"Matrix":[1,-0.005,0.005,1,-469.5,44.8]
+}}]},{
+"index":40,
+"duration":41,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-413.3,"y":147.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-459.55,116.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-542,"y":219.4},
+"loop":"loop",
+"Matrix":[-1.043,-0.112,-0.102,0.945,-399.45,98.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-519.5,"y":135.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,-550.15,101.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-457.6,"y":40.1},
+"loop":"loop",
+"Matrix":[0.935,0.017,-0.128,1.049,-546.4,-43.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423.4,"y":82.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,-469.2,44.85]
+}}]},{
+"index":81,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-413.3,"y":147.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,-459.55,116.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-542,"y":219.4},
+"loop":"loop",
+"Matrix":[-1.043,-0.112,-0.102,0.945,-399.45,98.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-519.5,"y":135.55},
+"loop":"loop",
+"Matrix":[1,0,0,1,-550.15,101.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-457.2,"y":40.2},
+"loop":"loop",
+"Matrix":[0.935,0.022,-0.134,1.048,-545.55,-44.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":10,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423.2,"y":82.35},
+"loop":"loop",
+"Matrix":[1,0.005,-0.005,1,-468.85,44.85]
+}}]},{
+"index":84,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-412.7,"y":145.15},
+"loop":"loop",
+"Matrix":[0.999,-0.032,0.032,0.999,-459.85,116.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-541.25,"y":220.35},
+"loop":"loop",
+"Matrix":[-1.045,-0.093,-0.085,0.946,-400.9,97.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-520.8,"y":134.3},
+"loop":"loop",
+"Matrix":[0.999,0.048,-0.048,0.999,-549.75,98.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-457.35,"y":40.55},
+"loop":"loop",
+"Matrix":[0.934,0.034,-0.148,1.046,-544.45,-44.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423.9,"y":83.25},
+"loop":"loop",
+"Matrix":[1,0.018,-0.018,1,-469,45.1]
+}}]},{
+"index":86,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece long",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-410.7,"y":137.75},
+"loop":"loop",
+"Matrix":[0.982,-0.188,0.188,0.982,-461.8,116.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-540.45,"y":221.5},
+"loop":"loop",
+"Matrix":[-1.046,-0.075,-0.068,0.948,-402.25,96.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-499.5,"y":108.05},
+"loop":"loop",
+"Matrix":[0.987,0.157,-0.157,0.987,-549.55,93.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-456.2,"y":40.95},
+"loop":"loop",
+"Matrix":[0.932,0.063,-0.18,1.041,-540.6,-47.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face pissed",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-433.25,"y":123.7},
+"loop":"loop",
+"Matrix":[0.998,0.05,-0.073,0.929,-467.25,52.25]
+}}]},{
+"index":87,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-474.8,"y":147.05},
+"loop":"loop",
+"Matrix":[0.999,0.031,-0.031,0.999,-530.5,97.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-536.6,"y":95.65},
+"loop":"loop",
+"Matrix":[0.992,-0.123,0.123,0.992,-632.1,81.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-446.15,"y":101.7},
+"loop":"loop",
+"Matrix":[0.987,0.156,-0.156,0.987,-438.2,66.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-589.05,"y":147.45},
+"loop":"loop",
+"Matrix":[0.876,-0.44,0.405,0.805,-702.55,150.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-477.75,"y":40.85},
+"loop":"loop",
+"Matrix":[0.998,-0.053,0.053,0.998,-576,-50.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"knee pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-449.65,"y":173.9},
+"loop":"loop",
+"Matrix":[0.998,0.066,-0.066,0.998,-450.6,135.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-451.45,"y":112.9},
+"loop":"loop",
+"Matrix":[0.998,-0.053,0.053,0.998,-482.1,100.75]
+}}]},{
+"index":89,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-475.7,"y":147},
+"loop":"loop",
+"Matrix":[1,0,0,1,-532.9,98.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-575,"y":128.35},
+"loop":"loop",
+"Matrix":[1,-0.013,0.013,1,-634.75,67.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-424.15,"y":102.7},
+"loop":"loop",
+"Matrix":[1,0.022,-0.022,1,-442.1,67]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-599.9,"y":143.35},
+"loop":"loop",
+"Matrix":[0.932,-0.305,0.28,0.857,-712.65,129.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-477,"y":45.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,-570.35,-50.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"knee pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-417.65,"y":166.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,-453.15,133.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-454.5,"y":120.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,-484.5,106.35]
+}}]},{
+"index":91,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-475.7,"y":147},
+"loop":"loop",
+"Matrix":[1,0,0,1,-532.9,98.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-576,"y":126.75},
+"loop":"loop",
+"Matrix":[1,0.014,-0.014,1,-634.05,64.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-415.65,"y":103.7},
+"loop":"loop",
+"Matrix":[1,-0.014,0.014,1,-443.35,66.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-601.3,"y":141.1},
+"loop":"loop",
+"Matrix":[0.938,-0.287,0.264,0.862,-713.8,125.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-477,"y":45.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,-570.35,-50.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"knee pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-418.15,"y":166.4},
+"loop":"loop",
+"Matrix":[1,0,0,1,-453.65,132.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-454.5,"y":120.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,-484.5,106.35]
+}}]},{
+"index":93,
+"duration":5,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-475.7,"y":147},
+"loop":"loop",
+"Matrix":[1,0,0,1,-532.9,98.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-576,"y":126.75},
+"loop":"loop",
+"Matrix":[1,0.014,-0.014,1,-634.05,64.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-415.65,"y":103.7},
+"loop":"loop",
+"Matrix":[1,-0.014,0.014,1,-443.35,66.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-601.3,"y":141.1},
+"loop":"loop",
+"Matrix":[0.938,-0.287,0.264,0.862,-713.8,125.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-477,"y":45.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,-570.35,-50.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"knee pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-418.15,"y":165.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,-453.65,132.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-454.5,"y":120.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,-484.5,106.35]
+}}]},{
+"index":98,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-479.05,"y":180.7},
+"loop":"loop",
+"Matrix":[1,-0.018,0.103,1.056,-547.3,81.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-544.7,"y":55.9},
+"loop":"loop",
+"Matrix":[0.986,0.172,-0.178,0.991,-641.4,19.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-427.85,"y":70.6},
+"loop":"loop",
+"Matrix":[0.979,-0.193,0.244,0.981,-452.35,30.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-622.65,"y":98.15},
+"loop":"loop",
+"Matrix":[0.932,-0.292,0.272,0.868,-735.05,82.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-481.5,"y":31.85},
+"loop":"loop",
+"Matrix":[0.992,0.129,-0.119,1.001,-562.45,-76.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-470.35,"y":117},
+"loop":"loop",
+"Matrix":[0.994,0.106,-0.172,0.901,-494.1,96.05]
+}}]},{
+"index":100,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt bending pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-474.55,"y":186.45},
+"loop":"loop",
+"Matrix":[1,0,0.075,1.048,-540.05,86.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm right bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-585.3,"y":99},
+"loop":"loop",
+"Matrix":[0.989,0.145,-0.145,0.989,-634.65,29.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm left bent",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-422.5,"y":80.15},
+"loop":"loop",
+"Matrix":[0.992,-0.123,0.123,0.992,-441.75,38.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-611.25,"y":107.9},
+"loop":"loop",
+"Matrix":[0.904,-0.377,0.347,0.831,-724.65,103.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-476.55,"y":33},
+"loop":"loop",
+"Matrix":[0.997,0.075,-0.075,0.997,-562.35,-70.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"face downward pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-458.65,"y":110.65},
+"loop":"loop",
+"Matrix":[0.998,0.052,-0.052,0.998,-487.9,95.25]
+}}]},{
+"index":101,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"snap fx",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-331.75,"y":-126},
+"loop":"loop",
+"Matrix":[0.753,-0.12,0,1,-444.45,-196]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-480.4,"y":103.5},
+"loop":"loop",
+"Matrix":[0.997,-0.03,0.025,1.134,-515.7,73.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-508.55,"y":131.45},
+"loop":"loop",
+"Matrix":[0.914,-0.409,0.396,0.914,-570.4,81.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-549.65,"y":63.3},
+"loop":"loop",
+"Matrix":[-0.639,0.25,0.243,0.644,-533.45,1.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-448.1,"y":112.65},
+"loop":"loop",
+"Matrix":[0.995,-0.096,0.087,1.003,-492.7,58.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-446.5,"y":-4.75},
+"loop":"loop",
+"Matrix":[-0.946,0.221,0.23,1.032,-364.65,-108.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-465.95,"y":41.6},
+"loop":"singleframe",
+"Matrix":[0.991,-0.126,0.118,0.999,-519.05,13.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-418.5,"y":82.4},
+"loop":"loop",
+"Matrix":[0.328,1.131,1.068,-0.973,-442.8,24.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-343.1,"y":-131.3},
+"loop":"loop",
+"Matrix":[1.081,0.06,-0.136,0.988,-390.1,-161.05]
+}}]},{
+"index":102,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-480.4,"y":103.5},
+"loop":"loop",
+"Matrix":[0.997,-0.03,0.025,1.134,-515.7,73.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-508.55,"y":131.45},
+"loop":"loop",
+"Matrix":[0.914,-0.409,0.396,0.914,-570.4,81.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-549.65,"y":63.3},
+"loop":"loop",
+"Matrix":[-0.639,0.25,0.243,0.644,-533.45,1.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-448.1,"y":112.65},
+"loop":"loop",
+"Matrix":[0.995,-0.096,0.087,1.003,-492.7,58.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-446.5,"y":-4.75},
+"loop":"loop",
+"Matrix":[-0.946,0.221,0.23,1.032,-364.65,-108.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":-465.95,"y":41.6},
+"loop":"singleframe",
+"Matrix":[0.991,-0.126,0.118,0.999,-519.05,13.2]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-418.5,"y":82.4},
+"loop":"loop",
+"Matrix":[0.328,1.131,1.068,-0.973,-442.8,24.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-364.75,"y":-57.5},
+"loop":"loop",
+"Matrix":[1.089,-0.21,0.141,1.041,-447.8,-137.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-343.1,"y":-131.3},
+"loop":"loop",
+"Matrix":[1.081,0.06,-0.136,0.988,-390.1,-161.05]
+}}]},{
+"index":103,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-472.35,"y":107.05},
+"loop":"loop",
+"Matrix":[0.993,0.11,-0.124,1.12,-503.45,72.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-498.9,"y":128.95},
+"loop":"loop",
+"Matrix":[0.875,-0.477,0.477,0.875,-565.15,83.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-544.8,"y":61.9},
+"loop":"loop",
+"Matrix":[-0.68,0.086,0.086,0.68,-514.7,6.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-440.9,"y":119.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,-480.6,60.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-425.05,"y":2.25},
+"loop":"loop",
+"Matrix":[-0.97,0.06,0.065,1.049,-327.65,-86.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-452.15,"y":48.3},
+"loop":"singleframe",
+"Matrix":[0.999,0.04,-0.04,0.999,-500.15,11.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-408.7,"y":92.1},
+"loop":"loop",
+"Matrix":[0.162,1.161,1.207,-0.725,-424.6,31.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-354.25,"y":-11.5},
+"loop":"loop",
+"Matrix":[1.071,-0.28,0.219,1.024,-443.3,-85.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-338.65,"y":-89.15},
+"loop":"loop",
+"Matrix":[1.008,-0.01,-0.067,1.101,-384,-118.6]
+}}]},{
+"index":106,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-503,"y":121.2},
+"loop":"loop",
+"Matrix":[0.982,0.184,-0.207,1.106,-498.3,74.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-500.65,"y":133.25},
+"loop":"loop",
+"Matrix":[0.919,-0.381,0.381,0.919,-561.65,81.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-537.7,"y":65.5},
+"loop":"loop",
+"Matrix":[-0.685,0.005,0.005,0.685,-501.25,14.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-439.8,"y":121.1},
+"loop":"loop",
+"Matrix":[1,0.022,-0.022,1,-478.25,62]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-424.8,"y":8.75},
+"loop":"loop",
+"Matrix":[-0.969,0.073,0.079,1.048,-328.6,-81.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-451.25,"y":57.15},
+"loop":"singleframe",
+"Matrix":[0.999,0.027,-0.027,0.999,-499.75,21.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-407.05,"y":94.65},
+"loop":"loop",
+"Matrix":[0.08,1.169,1.255,-0.638,-418.6,33]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-350.1,"y":-0.35},
+"loop":"loop",
+"Matrix":[1.085,-0.218,0.16,1.034,-434.65,-79.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-330.05,"y":-76.9},
+"loop":"loop",
+"Matrix":[1.006,0.047,-0.13,1.095,-373.6,-108.9]
+}}]},{
+"index":108,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-499.35,"y":117.65},
+"loop":"loop",
+"Matrix":[0.95,0.307,-0.346,1.071,-488.75,71.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-501.6,"y":129.95},
+"loop":"loop",
+"Matrix":[0.963,-0.249,0.249,0.963,-554.75,70.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-526.75,"y":56.65},
+"loop":"loop",
+"Matrix":[-0.677,-0.103,-0.103,0.677,-482.8,11.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-439,"y":122.65},
+"loop":"loop",
+"Matrix":[0.998,0.062,-0.062,0.998,-475.05,62.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-423,"y":13.35},
+"loop":"loop",
+"Matrix":[-0.969,0.069,0.074,1.048,-326.4,-75.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-451.65,"y":63.6},
+"loop":"singleframe",
+"Matrix":[0.999,0.032,-0.032,0.999,-500.05,27.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-405.25,"y":97.5},
+"loop":"loop",
+"Matrix":[-0.111,1.166,1.341,-0.426,-406.65,34.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-344,"y":16.85},
+"loop":"loop",
+"Matrix":[1.102,-0.097,0.045,1.045,-419.3,-71.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-315.65,"y":-57},
+"loop":"loop",
+"Matrix":[0.995,0.158,-0.25,1.074,-355.4,-93.6]
+}}]},{
+"index":110,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-501.55,"y":114.65},
+"loop":"loop",
+"Matrix":[0.927,0.369,-0.415,1.045,-487.95,69.7]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-506,"y":126.9},
+"loop":"loop",
+"Matrix":[0.987,-0.115,0.115,0.987,-550.4,60.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun shoot hand 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-522.85,"y":52.95},
+"loop":"loop",
+"Matrix":[-0.617,-0.294,-0.294,0.617,-467.9,22.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shirt stretch pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-439.85,"y":182.9},
+"loop":"loop",
+"Matrix":[0.999,0.027,-0.009,1,-481.15,64.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"head pico no face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-432.8,"y":17.7},
+"loop":"singleframe",
+"Matrix":[-0.966,0.098,0.106,1.045,-339,-74.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"swag face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-459.85,"y":68.8},
+"loop":"singleframe",
+"Matrix":[0.999,0.001,-0.001,0.999,-509.4,34.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm piece short",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-414.65,"y":101.45},
+"loop":"loop",
+"Matrix":[-0.132,1.163,1.348,-0.401,-414.9,38.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"gun face forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-350.7,"y":40.9},
+"loop":"loop",
+"Matrix":[1.101,-0.101,0.049,1.044,-426.3,-47.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hand top grip",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-322.6,"y":-33},
+"loop":"loop",
+"Matrix":[0.994,0.154,-0.246,1.074,-362.55,-69.55]
+}}]},{
+"index":113,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"body bent pico",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-410.8,"y":221.05},
+"loop":"loop",
+"Matrix":[1.017,-0.082,0.078,0.968,-546.75,93.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-421.85,"y":79.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-460.5,49.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"shoulder arm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-563,"y":120.25},
+"loop":"loop",
+"Matrix":[0.962,0.268,-0.268,0.962,-589.1,84.3]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"forearm piece",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-598.4,"y":135.3},
+"loop":"loop",
+"Matrix":[0.96,0.273,-0.273,0.96,-614.2,56.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"handgun sketch",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-594.3,"y":95.8},
+"loop":"loop",
+"Matrix":[0.981,0.185,-0.185,0.981,-607.95,-112.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"pico head downward",
+"firstFrame":13,
+"symbolType":"graphic",
+"transformationPoint":{"x":-474.5,"y":115.4},
+"loop":"singleframe",
+"Matrix":[0.969,-0.244,0.244,0.969,-629.2,-5.55]
+}}]}
+]}
+]}

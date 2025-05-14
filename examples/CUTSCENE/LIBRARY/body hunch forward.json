@@ -1,0 +1,52 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[0.975,0,0,1,0,0],
+"name":"331"
+}}]},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"back leg",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":132.7,"y":190.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,13.5,117.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"front leg",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":253.2,"y":133},
+"loop":"loop",
+"Matrix":[1,0,0,1,94.8,0]
+}}]},{
+"index":3,
+"duration":5,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"back leg",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":130.7,"y":195.9},
+"loop":"loop",
+"Matrix":[1,0,0,1,11.5,122.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"front leg",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":253.2,"y":133},
+"loop":"loop",
+"Matrix":[1,0,0,1,94.8,0]
+}}]}
+]}
+]}

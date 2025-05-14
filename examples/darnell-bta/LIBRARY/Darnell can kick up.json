@@ -1,0 +1,343 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":122.25,"y":268.6},
+"loop":"loop",
+"Matrix":[0.977,-0.157,0.153,1.004,73.85,239.75]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":123.3,"y":266.75},
+"loop":"loop",
+"Matrix":[0.989,-0.146,0.146,0.989,74.65,237.95]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":127.8,"y":260.55},
+"loop":"loop",
+"Matrix":[0.995,-0.097,0.097,0.995,80.6,229.35]
+}}]},{
+"index":4,
+"duration":11,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphone front",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":126.95,"y":262.1},
+"loop":"loop",
+"Matrix":[0.992,-0.123,0.123,0.992,78.95,232.2]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":99.85,"y":305.1},
+"loop":"loop",
+"Matrix":[0.97,0.234,-0.234,0.97,70.95,235.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter thumb",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":39.45,"y":282.9},
+"loop":"loop",
+"Matrix":[0.917,-0.257,0.257,0.917,8.3,263.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":57.45,"y":342.3},
+"loop":"loop",
+"Matrix":[0.917,-0.257,0.257,0.917,-4.65,301.3]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"right arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":104.8,"y":305.15},
+"loop":"loop",
+"Matrix":[0.989,0.14,-0.14,0.989,69.3,238.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter thumb",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":50.5,"y":276.15},
+"loop":"loop",
+"Matrix":[0.936,-0.176,0.176,0.936,21.15,253.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"lighter hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":63.25,"y":336.9},
+"loop":"loop",
+"Matrix":[0.936,-0.176,0.176,0.936,4.95,290.6]
+}}]}
+]},{
+"Layer_name":"Layer 7",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell can kick up face snap",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":176.75,"y":246.75},
+"loop":"loop",
+"Matrix":[0.996,-0.083,0.083,0.996,97.15,146.8]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell can kick up face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":182.55,"y":193.6},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,109.3,141.95]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":173.85,"y":136.2},
+"loop":"loop",
+"Matrix":[0.975,-0.22,0.22,0.975,16.3,55.55]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell default head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":184.6,"y":135.15},
+"loop":"loop",
+"Matrix":[0.986,-0.163,0.163,0.986,31.9,45.55]
+}}]}
+]},{
+"Layer_name":"Layer 8",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings slight up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":202.25,"y":270.3},
+"loop":"loop",
+"Matrix":[0.984,-0.174,0.174,0.984,165.1,247.25]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings slight up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":202.25,"y":270.3},
+"loop":"loop",
+"Matrix":[0.957,-0.288,0.288,0.957,162.7,251.85]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":187.35,"y":249.55},
+"loop":"loop",
+"Matrix":[1.005,-0.256,0.139,0.968,156.65,252.15]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":187.9,"y":253.45},
+"loop":"loop",
+"Matrix":[0.949,-0.135,0.019,1.05,159.5,252]
+}}]},{
+"index":4,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":187.25,"y":252.3},
+"loop":"loop",
+"Matrix":[0.99,-0.141,-0.023,1.013,157.95,251.2]
+}}]},{
+"index":7,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"hoodie strings",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":187.35,"y":252.25},
+"loop":"loop",
+"Matrix":[1.031,-0.119,-0.049,0.985,156.85,250.7]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[0.333,0,0,0.333,25.7,213.65],
+"name":"28"
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"darnell body kick up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":231.65,"y":362.35},
+"loop":"loop",
+"Matrix":[1,0,0,1,30.75,214.6]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":190.4,"y":243.65},
+"loop":"loop",
+"Matrix":[0.981,0.182,-0.182,0.981,184.4,212.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bg hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":275.45,"y":281.3},
+"loop":"loop",
+"Matrix":[0.966,-0.246,0.246,0.966,211.15,213.2]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"left arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":235.4,"y":275.1},
+"loop":"loop",
+"Matrix":[0.992,0.107,-0.107,0.992,185.95,213.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bg hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":287.9,"y":265.85},
+"loop":"loop",
+"Matrix":[0.923,-0.379,0.379,0.923,208.65,220.65]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":159.8,"y":252.9},
+"loop":"loop",
+"Matrix":[0.977,-0.157,0.153,1.004,75.75,228.5]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":161.4,"y":251.6},
+"loop":"loop",
+"Matrix":[0.989,-0.146,0.146,0.989,76.7,226.85]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":166.55,"y":247.3},
+"loop":"loop",
+"Matrix":[0.995,-0.097,0.097,0.995,83.2,218.3]
+}}]},{
+"index":4,
+"duration":11,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"headphones back",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":165.35,"y":247.8},
+"loop":"loop",
+"Matrix":[0.992,-0.123,0.123,0.992,81.25,221.1]
+}}]}
+]}
+]}
