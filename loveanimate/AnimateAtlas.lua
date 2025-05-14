@@ -52,7 +52,7 @@ function AnimateAtlas:setColorMultiplier(r, g, b, a)
     self._colorTransformShader:send("colorMultiplier", {r, g, b, a})
 end
 
---- Load the atlas from folder UwU
+--- Load the atlas from folder
 --- @param folder string
 ---
 function AnimateAtlas:load(folder)
@@ -68,7 +68,7 @@ function AnimateAtlas:load(folder)
     for _, item in ipairs(love.filesystem.getDirectoryItems(folder .. "/LIBRARY")) do
         if string.endsWith(item, ".json") then
             local data = json.decode(love.filesystem.read("string", folder .. "/LIBRARY/" .. item))
-            self.libraries[string.sub(item, 1, #item - 5)] = data
+            self.libraries[string.sub(item, 1, #item - 5)] = { data = data, optimized = data.L ~= nil }
         end
     end
     if #self.spritemaps < 1 then
@@ -81,37 +81,34 @@ function AnimateAtlas:load(folder)
 
     self.framerate = json.decode(love.filesystem.read("string", folder .. "/" .. "metadata.json"))[self.timeline.optimized and "FRT" or "framerate"]
     print("Loaded at " .. self.framerate .. " frames per second")
-
-
-    -- parse skibidi toilet
-    -- make sure u add the duplicate frames in layers
-    -- because funny
-    -- then ur good
-    -- https://github.com/what-is-a-git/gdanimate
 end
 
 function AnimateAtlas:getTimelineLength(timeline)
+    local optimized = timeline.optimized == true or timeline.L ~= nil
     if timeline.data then
-        timeline = timeline.data.ANIMATION.TIMELINE
+        timeline = timeline.data[optimized and "AN" or "ANIMATION"][optimized and "TL" or "TIMELINE"]
     end
     local longest = 0
-    local timelineLayers = timeline.LAYERS
+    local timelineLayers = timeline[optimized and "L" or "LAYERS"]
     for i = #timelineLayers, 1, -1 do
         local layer = timelineLayers[i]
-        local keyframe = layer.Frames[#layer.Frames]
+        local layerFrames = layer[optimized and "FR" or "Frames"]
+
+        local keyframe = layerFrames[#layerFrames]
         if keyframe ~= nil then
-            local length = keyframe.index + keyframe.duration
+            local length = keyframe[optimized and "I" or "index"] + keyframe[optimized and "DU" or "duration"]
             if length > longest then
                 longest = length
             end
         end
     end
-
+    
     return longest
 end
 
 function AnimateAtlas:getLength()
-    return self:getTimelineLength(self.timeline.data.ANIMATION.TIMELINE)
+    local optimized = self.timeline.optimized == true or self.timeline.L ~= nil
+    return self:getTimelineLength(self.timeline.data[optimized and "AN" or "ANIMATION"][optimized and "TL" or "TIMELINE"])
 end
 
 ---
@@ -120,27 +117,32 @@ end
 --- @param  matrix    love.Transform
 ---
 function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
-    local timelineLayers = timeline.LAYERS
+    local optimized = timeline.L ~= nil
+    local timelineLayers = timeline[optimized and "L" or "LAYERS"]
+
     for i = #timelineLayers, 1, -1 do
         local layer = timelineLayers[i]
-        local keyframes = layer.Frames
+        local keyframes = layer[optimized and "FR" or "Frames"]
 
         for j = 1, #keyframes do
             local keyframe = keyframes[j]
 
-            local index = keyframe.index
-            local duration = keyframe.duration
+            local index = keyframe[optimized and "I" or "index"]
+            local duration = keyframe[optimized and "DU" or "duration"]
         
             if frame >= index and frame < index + duration then
-                local elements = keyframe.elements
+                local elements = keyframe[optimized and "E" or "elements"]
                 for k = 1, #elements do
                     local element = elements[k]
-                    if element.SYMBOL_Instance then
-                        local symbol = element.SYMBOL_Instance
-                        local symbolName = symbol.SYMBOL_name
+                    
+                    local symbol = element[optimized and "SI" or "SYMBOL_Instance"]
+                    local atlasSprite = element[optimized and "ASI" or "ATLAS_SPRITE_instance"]
+                    
+                    if symbol then
+                        local symbolName = symbol[optimized and "SN" or "SYMBOL_name"]
 
                         -- get the symbol's first frame
-                        local firstFrame = symbol.firstFrame
+                        local firstFrame = symbol[optimized and "FF" or "firstFrame"]
                         if firstFrame == nil then
                             firstFrame = 0
                         end
@@ -148,13 +150,16 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                         local frameIndex = firstFrame
                         frameIndex = frameIndex + (frame - index)
 
-                        local symbolType = symbol.symbolType
+                        local symbolType = symbol[optimized and "ST" or "symbolType"]
                         if symbolType == "movieclip" or symbolType == "MC" then
                             -- movie clips can only display first frame
                             frameIndex = 0
                         end
-                        local loopMode = symbol.loop
-                        local symbolTimeline = self.libraries[symbolName]
+                        local loopMode = symbol[optimized and "LP" or "loop"]
+
+                        local library = self.libraries[symbolName]
+                        local symbolTimeline = library.data
+                        
                         local length = self:getTimelineLength(symbolTimeline)
 
                         if loopMode == "loop" or loopMode == "LP" then
@@ -180,7 +185,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                             frameIndex = firstFrame
                         end
 
-                        local symbolMatrixRaw = symbol.Matrix
+                        local symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
                         local symbolMatrix = love.math.newTransform()
                         symbolMatrix:setMatrix(
                             "column", -- OKAY MAKE SURE THIS IS HERE LOL
@@ -212,7 +217,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                         end
                         self:drawTimeline(symbolTimeline, frameIndex, matrix:clone():apply(symbolMatrix), colorTransform)
                     
-                    elseif element.ATLAS_SPRITE_instance then
+                    elseif atlasSprite then
                         -- store thecolor transform mode somewhere
                         local colorTransformMode = colorTransform and colorTransform.mode or nil
                         if not colorTransformMode then
@@ -221,10 +226,9 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                         --- @type "brightness"|"tint"|"alpha"|"advanced"|"none"
                         colorTransformMode = colorTransformMode:lower()
 
-                        local atlasSprite = element.ATLAS_SPRITE_instance
-                        local name = atlasSprite.name
+                        local name = atlasSprite[optimized and "N" or "name"]
+                        local spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
                         
-                        local spriteMatrixRaw = atlasSprite.Matrix
                         local spriteMatrix = love.math.newTransform()
                         spriteMatrix:setMatrix(
                             "column", -- OKAY MAKE SURE THIS IS HERE LOL x2
@@ -325,6 +329,8 @@ function AnimateAtlas:getSymbolTimeline(symbol)
     local timeline = self.libraries[self.symbol]
     if not timeline then
         timeline = self.timeline
+    else
+        timeline = timeline.data
     end
     return timeline
 end
@@ -335,7 +341,7 @@ function AnimateAtlas:draw(x, y)
 
     local timeline = self:getSymbolTimeline(self.symbol)
     if timeline.data then
-        timeline = timeline.data.ANIMATION.TIMELINE
+        timeline = timeline.data[timeline.optimized and "AN" or "ANIMATION"][timeline.optimized and "TL" or "TIMELINE"]
     end
     self:drawTimeline(timeline, self.frame, identity, nil)
 end

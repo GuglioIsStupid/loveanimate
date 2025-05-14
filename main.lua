@@ -16,7 +16,7 @@ local men
 
 function love.load()
     men = love.animate.newAtlas()
-    men:load("examples/CUTSCENE")
+    men:load("examples/tankman")
     -- men:load("examples/pico_freeplay")
     -- men.symbol = "Pico DJ"
 
