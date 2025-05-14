@@ -28,6 +28,28 @@ require("loveanimate.libs.StringUtil")
 function AnimateAtlas:constructor()
     self.frame = 0
     self.symbol = ""
+
+    --- @protected
+    self._colorTransformShader = love.graphics.newShader([[
+        extern vec4 colorOffset;
+        extern vec4 colorMultiplier;
+
+        vec4 effect(vec4 color, Image tex, vec2 texCoords, vec2 screenCoords) {
+            vec4 finalColor = Texel(tex, texCoords) * color;
+            finalColor += colorOffset;
+            return finalColor * colorMultiplier;
+        }
+    ]])
+    self:setColorOffset(0, 0, 0, 0)
+    self:setColorMultiplier(1, 1, 1, 1)
+end
+
+function AnimateAtlas:setColorOffset(r, g, b, a)
+    self._colorTransformShader:send("colorOffset", {r, g, b, a})
+end
+
+function AnimateAtlas:setColorMultiplier(r, g, b, a)
+    self._colorTransformShader:send("colorMultiplier", {r, g, b, a})
 end
 
 --- Load the atlas from folder UwU
@@ -229,41 +251,60 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                                         drawMatrix:rotate(-90)
                                         drawMatrix:translate(0, sprite.w)
                                     end
-                                    local r, g, b, a = love.graphics.getColor()
-                                    -- TODO: i don't think this is working right
+                                    local lastShader = love.graphics.getShader()
+                                    love.graphics.setShader(self._colorTransformShader)
+
+                                    self:setColorOffset(0, 0, 0, 0)
+                                    self:setColorMultiplier(1, 1, 1, 1)
+
                                     if colorTransformMode == "brightness" then
-                                        local brightness = colorTransform["Brightness"]
-                                        love.graphics.setColor(
-                                            (r * (1 - math.abs(brightness))) + brightness,
-                                            (g * (1 - math.abs(brightness))) + brightness,
-                                            (b * (1 - math.abs(brightness))) + brightness,
-                                            a
+                                        local brightness = colorTransform["brightness"]
+                                        self:setColorOffset(brightness, brightness, brightness, 0)
+                                        self:setColorMultiplier(
+                                            1 - math.abs(brightness),
+                                            1 - math.abs(brightness),
+                                            1 - math.abs(brightness),
+                                            1
                                         )
+
                                     elseif colorTransformMode == "tint" then
-                                        local tintColor = tonumber("0xFF" + colorTransform["TintColor"]:sub(2))
+                                        local tintColor = tonumber("0xFF" + colorTransform["tintColor"]:sub(2))
                                         local tintR, tintG, tintB = intToRGB(tintColor)
                                         
-                                        local multiplier = colorTransform["TintMultiplier"]
-                                        love.graphics.setColor(
-                                            (r * (1 - multiplier)) + (tintR * multiplier),
-                                            (g * (1 - multiplier)) + (tintG * multiplier),
-                                            (b * (1 - multiplier)) + (tintB * multiplier),
-                                            a
+                                        local multiplier = colorTransform["tintMultiplier"]
+                                        self:setColorOffset(
+                                            tintR * multiplier,
+                                            tintG * multiplier,
+                                            tintB * multiplier,
+                                            0
                                         )
+                                        self:setColorMultiplier(
+                                            1 - multiplier,
+                                            1 - multiplier,
+                                            1 - multiplier,
+                                            1
+                                        )
+
                                     elseif colorTransformMode == "alpha" then
                                         local alphaMultiplier = colorTransform["alphaMultiplier"]
-                                        love.graphics.setColor(r, g, b, a * alphaMultiplier)
+                                        self:setColorMultiplier(1, 1, 1, alphaMultiplier)
                                     
                                     elseif colorTransformMode == "advanced" then
-                                        love.graphics.setColor(
-                                            (r * colorTransform["RedMultiplier"]) + colorTransform["redOffset"],
-                                            (g * colorTransform["greenMultiplier"]) + colorTransform["greenOffset"],
-                                            (b * colorTransform["blueMultiplier"]) + colorTransform["blueOffset"],
-                                            (a * colorTransform["alphaMultiplier"]) + colorTransform["AlphaOffset"]
+                                        self:setColorOffset(
+                                            colorTransform["redOffset"],
+                                            colorTransform["greenOffset"],
+                                            colorTransform["blueOffset"],
+                                            colorTransform["AlphaOffset"]
+                                        )
+                                        self:setColorMultiplier(
+                                            colorTransform["RedMultiplier"],
+                                            colorTransform["greenMultiplier"],
+                                            colorTransform["blueMultiplier"],
+                                            colorTransform["alphaMultiplier"]
                                         )
                                     end
                                     love.graphics.draw(spritemap.texture, quad, drawMatrix)
-                                    love.graphics.setColor(r, g, b, a)
+                                    love.graphics.setShader(lastShader)
                                     break
                                 end
                             end
