@@ -364,15 +364,11 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                                     local texture = spritemap.texture --- @type love.Image
                                     local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
                                     
+                                    local drawMatrix = matrix:clone():apply(spriteMatrix)
                                     if sprite.rotated then
-                                        -- need to rotate the thing by -90 degrees..somehow!
+                                        drawMatrix:translate(0,sprite.w)
+                                        drawMatrix:rotate(-math.pi/2)
                                     end
-                                    local drawMatrix = matrix:clone()
-                                    -- if sprite.rotated then
-                                    --     drawMatrix:rotate(-90)
-                                    --     drawMatrix:translate(0, sprite.w)
-                                    -- end
-                                    drawMatrix = drawMatrix:apply(spriteMatrix)
 
                                     local lastShader = love.graphics.getShader()
                                     love.graphics.setShader(self._colorTransformShader)
