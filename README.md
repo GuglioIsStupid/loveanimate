@@ -18,3 +18,4 @@ require("loveanimate")
 - [-] Color Transform
 - [X] Optimized Atlas Support
 - [X] Regular AA Atlas Support
+- [ ] Fix Rotated Atlases

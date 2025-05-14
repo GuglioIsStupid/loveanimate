@@ -3,11 +3,11 @@ local Classic = require("loveanimate.libs.Classic")
 
 local prints = 0
 
-local lprint = print
-local function print(...)
-    prints = prints + 1
-    lprint("#" .. prints .. " - " .. ...)
-end
+-- local lprint = print
+-- local function print(...)
+--     prints = prints + 1
+--     lprint("#" .. prints .. " - " .. ...)
+-- end
 
 local function intToRGB(int)
 	return
@@ -28,6 +28,9 @@ require("loveanimate.libs.StringUtil")
 function AnimateAtlas:constructor()
     self.frame = 0
     self.symbol = ""
+
+    --- @protected
+    self._rotatedAtlasSpriteTextures = {} --- @type table<string, love.Image>
 
     --- @protected
     self._colorTransformShader = love.graphics.newShader([[
@@ -56,6 +59,10 @@ end
 --- @param folder string
 ---
 function AnimateAtlas:load(folder)
+    for key, value in pairs(self._rotatedAtlasSpriteTextures) do
+        value:release()
+        self._rotatedAtlasSpriteTextures[key] = nil
+    end
     self.timeline = {}
     self.timeline.data = json.decode(love.filesystem.read("string", folder .. "/" .. "Animation.json"))
     self.timeline.optimized = self.timeline.data.AN ~= nil
@@ -101,7 +108,7 @@ function AnimateAtlas:load(folder)
     else
         local optimized = self.timeline.data.FRT ~= nil
         local hasFramerate = self.timeline.data.FRT ~= nil or self.timeline.data.framerate ~= nil
-        self.framerate = hasFramerate and (optimized and self.timeline.data.FRT or self.timeline.data.framerate) or 0
+        self.framerate = hasFramerate and (optimized and self.timeline.data.FRT or self.timeline.data.framerate) or 24
         print(self.framerate)
     end
     print("Loaded at " .. self.framerate .. " frames per second")
@@ -354,12 +361,19 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                             for z = 1, #sprites do
                                 local sprite = sprites[z].SPRITE
                                 if sprite.name == name then
-                                    local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, spritemap.texture:getWidth(), spritemap.texture:getHeight())
-                                    local drawMatrix = matrix:clone():apply(spriteMatrix)
+                                    local texture = spritemap.texture --- @type love.Image
+                                    local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
+                                    
                                     if sprite.rotated then
-                                        drawMatrix:rotate(-90)
-                                        drawMatrix:translate(0, sprite.w)
+                                        -- need to rotate the thing by -90 degrees..somehow!
                                     end
+                                    local drawMatrix = matrix:clone()
+                                    -- if sprite.rotated then
+                                    --     drawMatrix:rotate(-90)
+                                    --     drawMatrix:translate(0, sprite.w)
+                                    -- end
+                                    drawMatrix = drawMatrix:apply(spriteMatrix)
+
                                     local lastShader = love.graphics.getShader()
                                     love.graphics.setShader(self._colorTransformShader)
 
@@ -412,7 +426,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
                                             colorTransform["alphaMultiplier"]
                                         )
                                     end
-                                    love.graphics.draw(spritemap.texture, quad, drawMatrix)
+                                    love.graphics.draw(texture, quad, drawMatrix)
                                     love.graphics.setShader(lastShader)
                                     break
                                 end

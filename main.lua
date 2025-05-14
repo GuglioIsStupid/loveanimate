@@ -16,7 +16,7 @@ local men
 
 function love.load()
     men = love.animate.newAtlas()
-    men:load("examples/gf")
+    men:load("examples/lyric")
     -- men.symbol = "Pico DJ"
 
     love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
