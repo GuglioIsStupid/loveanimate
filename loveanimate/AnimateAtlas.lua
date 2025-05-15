@@ -1,14 +1,6 @@
 local Bit = require("loveanimate.libs.Bit")
 local Classic = require("loveanimate.libs.Classic")
 
-local prints = 0
-
--- local lprint = print
--- local function print(...)
---     prints = prints + 1
---     lprint("#" .. prints .. " - " .. ...)
--- end
-
 local function intToRGB(int)
 	return
 		Bit.band(Bit.rshift(int, 16), 0xFF) / 255,
@@ -54,6 +46,55 @@ end
 function AnimateAtlas:setColorMultiplier(r, g, b, a)
     self._colorTransformShader:send("colorMultiplier", {r, g, b, a})
 end
+
+local COLOR_TRANSFORM = {
+    brightness = function(self, colorTransform)
+        local brightness = colorTransform["brightness"]
+        self:setColorOffset(brightness, brightness, brightness, 0)
+        self:setColorMultiplier(
+            1 - math.abs(brightness),
+            1 - math.abs(brightness),
+            1 - math.abs(brightness),
+            1
+        )
+    end,
+    tint = function(self, colorTransform)
+        local tintColor = tonumber("0xFF" + colorTransform["tintColor"]:sub(2))
+        local tintR, tintG, tintB = intToRGB(tintColor)
+
+        local multiplier = colorTransform["tintMultiplier"]
+        self:setColorOffset(
+            tintR * multiplier,
+            tintG * multiplier,
+            tintB * multiplier,
+            0
+        )
+        self:setColorMultiplier(
+            1 - multiplier,
+            1 - multiplier,
+            1 - multiplier,
+            1
+        )
+    end,
+    alpha = function(self, colorTransform)
+        local alphaMultiplier = colorTransform["alphaMultiplier"]
+        self:setColorMultiplier(1, 1, 1, alphaMultiplier)
+    end,
+    advanced = function(self, colorTransform)
+        self:setColorOffset(
+            colorTransform["redOffset"],
+            colorTransform["greenOffset"],
+            colorTransform["blueOffset"],
+            colorTransform["AlphaOffset"]
+        )
+        self:setColorMultiplier(
+            colorTransform["RedMultiplier"],
+            colorTransform["greenMultiplier"],
+            colorTransform["blueMultiplier"],
+            colorTransform["alphaMultiplier"]
+        )
+    end
+}
 
 --- Load the atlas from folder
 --- @param folder string
@@ -142,6 +183,211 @@ function AnimateAtlas:getLength()
     return self:getTimelineLength(self.timeline.data[optimized and "AN" or "ANIMATION"][optimized and "TL" or "TIMELINE"])
 end
 
+local function MATRIX_2D(matrix)
+    return "column", -- OKAY MAKE SURE THIS IS HERE LOL
+        matrix[1], -- a
+        matrix[2], -- b
+        0, 0,
+        matrix[3], -- c
+        matrix[4], -- d
+        0, 0, 0, 0, 1, 0,
+        matrix[5], -- tx
+        matrix[6], -- ty
+        0, 1
+end
+
+local function MATRIX_3D(matrix, optimized)
+    if optimized then
+        return "column",
+            matrix[1], -- a
+            matrix[2], -- b
+            matrix[3], matrix[4],
+            matrix[5], -- c
+            matrix[6], -- d
+            matrix[7], matrix[8], matrix[9], matrix[10], matrix[11], matrix[12],
+            matrix[13], -- tx
+            matrix[14], -- ty
+            matrix[15], matrix[16]
+    end
+
+    return "column",
+        matrix["m00"], matrix["m01"], matrix["m02"], matrix["m03"],
+        matrix["m10"], matrix["m11"], matrix["m12"], matrix["m13"],
+        matrix["m20"], matrix["m21"], matrix["m22"], matrix["m23"],
+        matrix["m30"], matrix["m31"], matrix["m32"], matrix["m33"]
+end
+
+local function RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform, optimized)
+    local symbolName = symbol[optimized and "SN" or "SYMBOL_name"]
+
+    -- get the symbol's first frame
+    local firstFrame = symbol[optimized and "FF" or "firstFrame"]
+    if firstFrame == nil then
+        firstFrame = 0
+    end
+
+    local frameIndex = firstFrame -- get the frame index we want to possibly render
+    frameIndex = frameIndex + (frame - index)
+
+    local symbolType = symbol[optimized and "ST" or "symbolType"]
+    if symbolType == "movieclip" or symbolType == "MC" then
+        -- movie clips can only display first frame
+        frameIndex = 0
+    end
+    local loopMode = symbol[optimized and "LP" or "loop"]
+
+    local library = self.libraries[symbolName]
+    local symbolTimeline = library.data
+
+    local length = self:getTimelineLength(symbolTimeline)
+
+    if loopMode == "loop" or loopMode == "LP" then
+        -- wrap around back to 0
+        if frameIndex < 0 then
+            frameIndex = length - 1
+        end
+        if frameIndex > length - 1 then
+            frameIndex = 0
+        end
+
+    elseif loopMode == "playonce" or loopMode == "PO" then
+        -- stop at last frame
+        if frameIndex < 0 then
+            frameIndex = 0
+        end
+        if frameIndex > length - 1 then
+            frameIndex = length - 1
+        end
+
+    elseif loopMode == "singleframe" or loopMode == "SF" then
+        -- stop at first frame
+        frameIndex = firstFrame
+    end
+
+    local is3DMatrix = symbol[optimized and "M3D" or "Matrix3D"] ~= nil
+    local symbolMatrix = love.math.newTransform()
+
+    local symbolMatrixRaw
+    if is3DMatrix then
+        symbolMatrixRaw = symbol[optimized and "M3D" or "Matrix3D"]
+    else
+        symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
+    end
+
+    symbolMatrix:setMatrix((is3DMatrix and MATRIX_3D or MATRIX_2D)(symbolMatrixRaw, optimized))
+
+    -- TODO: is this shit even working correctly??
+    local symbolColor = symbol[optimized and "C" or "color"]
+    if symbolColor and not colorTransform then
+        colorTransform = symbolColor
+    end
+    if colorTransform and symbolColor then
+        for key, value in pairs(colorTransform) do
+            if type(value) == "number" then
+                if string.endsWith(key, "Offset") then
+                    -- is offset
+                    colorTransform[key] = value + symbolColor[key]
+                else
+                    -- assume multiplier
+                    colorTransform[key] = value * symbolColor[key]
+                end
+            end
+        end
+    end
+
+    self:drawTimeline(symbolTimeline, frameIndex, matrix:clone():apply(symbolMatrix), colorTransform)
+end
+
+local function RENDER_SPRITE(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
+    -- store thecolor transform mode somewhere
+    local colorTransformMode = colorTransform and colorTransform.mode or nil
+    if not colorTransformMode then
+        colorTransformMode = "none"
+    end
+    --- @type "brightness"|"tint"|"alpha"|"advanced"|"none"
+    colorTransformMode = colorTransformMode:lower()
+
+    local texture = spritemap.texture --- @type love.Image
+    local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
+
+    local drawMatrix = matrix*spriteMatrix
+    if sprite.rotated then
+        drawMatrix:translate(0,sprite.w)
+        drawMatrix:rotate(-math.pi/2)
+    end
+
+    local lastShader = love.graphics.getShader()
+    love.graphics.setShader(self._colorTransformShader)
+
+    self:setColorOffset(0, 0, 0, 0)
+    self:setColorMultiplier(1, 1, 1, 1)
+
+    if(type(COLOR_TRANSFORM[colorTransformMode]) == "function") then
+        COLOR_TRANSFORM[colorTransformMode](self, colorTransform)
+    end
+
+    love.graphics.draw(texture, quad, drawMatrix)
+    love.graphics.setShader(lastShader)
+end
+
+local function RENDER_ATLAS_SPRITE(self, atlasSprite, matrix, colorTransform, optimized)
+
+
+    local name = atlasSprite[optimized and "N" or "name"]
+    local is3DMatrix = atlasSprite[optimized and "M3D" or "Matrix3D"] ~= nil
+
+    local spriteMatrix = love.math.newTransform()
+
+    local spriteMatrixRaw
+    if is3DMatrix then
+        spriteMatrixRaw = atlasSprite[optimized and "M3D" or "Matrix3D"]
+    else
+        spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
+    end
+
+    spriteMatrix:setMatrix((is3DMatrix and MATRIX_3D or MATRIX_2D)(spriteMatrixRaw, optimized))
+
+    local spritemaps = self.spritemaps
+    for l = 1, #spritemaps do
+        local spritemap = spritemaps[l]
+        local sprites = spritemap.data.ATLAS.SPRITES
+        for z = 1, #sprites do
+            local sprite = sprites[z].SPRITE
+
+            if sprite.name == name then
+                RENDER_SPRITE(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
+                break
+            end
+        end
+    end
+end
+
+local function RENDER_KEYFRAME(self, keyframe, frame, matrix, colorTransform, optimized)
+    local index = keyframe[optimized and "I" or "index"]
+    local duration = keyframe[optimized and "DU" or "duration"]
+
+    if not (frame >= index and frame < index + duration) then
+        return
+    end
+
+    local elements = keyframe[optimized and "E" or "elements"]
+
+    for k = 1, #elements do
+        local element = elements[k]
+
+        local symbol = element[optimized and "SI" or "SYMBOL_Instance"]
+        local atlasSprite = element[optimized and "ASI" or "ATLAS_SPRITE_instance"]
+
+        if symbol then
+            RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform, optimized)
+        elseif atlasSprite then
+            RENDER_ATLAS_SPRITE(self, atlasSprite, matrix, colorTransform, optimized)
+        end
+    end
+
+    return true
+end
+
 ---
 --- @param  timeline  table
 --- @param  frame     integer
@@ -156,281 +402,9 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
         local keyframes = layer[optimized and "FR" or "Frames"]
 
         for j = 1, #keyframes do
-            local keyframe = keyframes[j]
+            local ret = RENDER_KEYFRAME(self, keyframes[j], frame, matrix, colorTransform, optimized)
 
-            local index = keyframe[optimized and "I" or "index"]
-            local duration = keyframe[optimized and "DU" or "duration"]
-        
-            if frame >= index and frame < index + duration then
-                local elements = keyframe[optimized and "E" or "elements"]
-                for k = 1, #elements do
-                    local element = elements[k]
-                    
-                    local symbol = element[optimized and "SI" or "SYMBOL_Instance"]
-                    local atlasSprite = element[optimized and "ASI" or "ATLAS_SPRITE_instance"]
-                    
-                    if symbol then
-                        local symbolName = symbol[optimized and "SN" or "SYMBOL_name"]
-
-                        -- get the symbol's first frame
-                        local firstFrame = symbol[optimized and "FF" or "firstFrame"]
-                        if firstFrame == nil then
-                            firstFrame = 0
-                        end
-                        -- get the frame index we want to possibly render
-                        local frameIndex = firstFrame
-                        frameIndex = frameIndex + (frame - index)
-
-                        local symbolType = symbol[optimized and "ST" or "symbolType"]
-                        if symbolType == "movieclip" or symbolType == "MC" then
-                            -- movie clips can only display first frame
-                            frameIndex = 0
-                        end
-                        local loopMode = symbol[optimized and "LP" or "loop"]
-
-                        local library = self.libraries[symbolName]
-                        local symbolTimeline = library.data
-                        
-                        local length = self:getTimelineLength(symbolTimeline)
-
-                        if loopMode == "loop" or loopMode == "LP" then
-                            -- wrap around back to 0
-                            if frameIndex < 0 then
-                                frameIndex = length - 1
-                            end
-                            if frameIndex > length - 1 then
-                                frameIndex = 0
-                            end
-                        
-                        elseif loopMode == "playonce" or loopMode == "PO" then
-                            -- stop at last frame
-                            if frameIndex < 0 then
-                                frameIndex = 0
-                            end
-                            if frameIndex > length - 1 then
-                                frameIndex = length - 1
-                            end
-
-                        elseif loopMode == "singleframe" or loopMode == "SF" then
-                            -- stop at first frame
-                            frameIndex = firstFrame
-                        end
-
-                        local is3DMatrix = symbol[optimized and "M3D" or "Matrix3D"] ~= nil
-                        local symbolMatrix = love.math.newTransform()
-                        
-                        if is3DMatrix then
-                            local symbolMatrixRaw = symbol[optimized and "M3D" or "Matrix3D"]
-                            if optimized then
-                                symbolMatrix:setMatrix(
-                                    "column",
-                                    symbolMatrixRaw[1], -- a
-                                    symbolMatrixRaw[2], -- b
-                                    symbolMatrixRaw[3], symbolMatrixRaw[4],
-                                    symbolMatrixRaw[5], -- c
-                                    symbolMatrixRaw[6], -- d
-                                    symbolMatrixRaw[7], symbolMatrixRaw[8], symbolMatrixRaw[9], symbolMatrixRaw[10], symbolMatrixRaw[11], symbolMatrixRaw[12],
-                                    symbolMatrixRaw[13], -- tx
-                                    symbolMatrixRaw[14], -- ty
-                                    symbolMatrixRaw[15], symbolMatrixRaw[16]
-                                )
-                            else
-                                symbolMatrix:setMatrix(
-                                    "column",
-                                    symbolMatrixRaw["m00"],
-                                    symbolMatrixRaw["m01"],
-                                    symbolMatrixRaw["m02"],
-                                    symbolMatrixRaw["m03"],
-                                    symbolMatrixRaw["m10"],
-                                    symbolMatrixRaw["m11"],
-                                    symbolMatrixRaw["m12"],
-                                    symbolMatrixRaw["m13"],
-                                    symbolMatrixRaw["m20"],
-                                    symbolMatrixRaw["m21"],
-                                    symbolMatrixRaw["m22"],
-                                    symbolMatrixRaw["m23"],
-                                    symbolMatrixRaw["m30"],
-                                    symbolMatrixRaw["m31"],
-                                    symbolMatrixRaw["m32"],
-                                    symbolMatrixRaw["m33"]
-                                )
-                            end
-                        else
-                            local symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
-                            symbolMatrix:setMatrix(
-                                "column", -- OKAY MAKE SURE THIS IS HERE LOL
-                                symbolMatrixRaw[1], -- a
-                                symbolMatrixRaw[2], -- b
-                                0, 0,
-                                symbolMatrixRaw[3], -- c
-                                symbolMatrixRaw[4], -- d
-                                0, 0, 0, 0, 1, 0,
-                                symbolMatrixRaw[5], -- tx
-                                symbolMatrixRaw[6], -- ty
-                                0, 1
-                            )
-                        end
-                        -- TODO: is this shit even working correctly??
-                        local symbolColor = symbol[optimized and "C" or "color"]
-                        if symbolColor and not colorTransform then
-                            colorTransform = symbolColor
-                        end
-                        if colorTransform and symbolColor then
-                            for key, value in pairs(colorTransform) do
-                                if type(value) == "number" then
-                                    if string.endsWith(key, "Offset") then
-                                        -- is offset
-                                        colorTransform[key] = value + symbolColor[key]
-                                    else
-                                        -- assume multiplier
-                                        colorTransform[key] = value * symbolColor[key]
-                                    end
-                                end
-                            end
-                        end
-                        self:drawTimeline(symbolTimeline, frameIndex, matrix:clone():apply(symbolMatrix), colorTransform)
-                    
-                    elseif atlasSprite then
-                        -- store thecolor transform mode somewhere
-                        local colorTransformMode = colorTransform and colorTransform.mode or nil
-                        if not colorTransformMode then
-                            colorTransformMode = "none"
-                        end
-                        --- @type "brightness"|"tint"|"alpha"|"advanced"|"none"
-                        colorTransformMode = colorTransformMode:lower()
-
-                        local name = atlasSprite[optimized and "N" or "name"]
-                        local is3DMatrix = atlasSprite[optimized and "M3D" or "Matrix3D"] ~= nil
-                        
-                        local spriteMatrix = love.math.newTransform()
-                        if is3DMatrix then
-                            local spriteMatrixRaw = atlasSprite[optimized and "M3D" or "Matrix3D"]
-                            if optimized then
-                                spriteMatrix:setMatrix(
-                                    "column",
-                                    spriteMatrixRaw[1], -- a
-                                    spriteMatrixRaw[2], -- b
-                                    spriteMatrixRaw[3], spriteMatrixRaw[4],
-                                    spriteMatrixRaw[5], -- c
-                                    spriteMatrixRaw[6], -- d
-                                    spriteMatrixRaw[7], spriteMatrixRaw[8], spriteMatrixRaw[9], spriteMatrixRaw[10], spriteMatrixRaw[11], spriteMatrixRaw[12],
-                                    spriteMatrixRaw[13], -- tx
-                                    spriteMatrixRaw[14], -- ty
-                                    spriteMatrixRaw[15], spriteMatrixRaw[16]
-                                )
-                            else
-                                spriteMatrix:setMatrix(
-                                    "column",
-                                    spriteMatrixRaw["m00"],
-                                    spriteMatrixRaw["m01"],
-                                    spriteMatrixRaw["m02"],
-                                    spriteMatrixRaw["m03"],
-                                    spriteMatrixRaw["m10"],
-                                    spriteMatrixRaw["m11"],
-                                    spriteMatrixRaw["m12"],
-                                    spriteMatrixRaw["m13"],
-                                    spriteMatrixRaw["m20"],
-                                    spriteMatrixRaw["m21"],
-                                    spriteMatrixRaw["m22"],
-                                    spriteMatrixRaw["m23"],
-                                    spriteMatrixRaw["m30"],
-                                    spriteMatrixRaw["m31"],
-                                    spriteMatrixRaw["m32"],
-                                    spriteMatrixRaw["m33"]
-                                )
-                            end
-                        else
-                            local spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
-                            spriteMatrix:setMatrix(
-                                "column", -- OKAY MAKE SURE THIS IS HERE LOL
-                                spriteMatrixRaw[1], -- a
-                                spriteMatrixRaw[2], -- b
-                                0, 0,
-                                spriteMatrixRaw[3], -- c
-                                spriteMatrixRaw[4], -- d
-                                0, 0, 0, 0, 1, 0,
-                                spriteMatrixRaw[5], -- tx
-                                spriteMatrixRaw[6], -- ty
-                                0, 1
-                            )
-                        end
-                        local spritemaps = self.spritemaps
-                        for l = 1, #spritemaps do
-                            local spritemap = spritemaps[l]
-                            local sprites = spritemap.data.ATLAS.SPRITES
-                            for z = 1, #sprites do
-                                local sprite = sprites[z].SPRITE
-                                if sprite.name == name then
-                                    local texture = spritemap.texture --- @type love.Image
-                                    local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
-                                    
-                                    local drawMatrix = matrix*spriteMatrix
-                                    if sprite.rotated then
-                                        drawMatrix:translate(0,sprite.w)
-                                        drawMatrix:rotate(-math.pi/2)
-                                    end
-
-                                    local lastShader = love.graphics.getShader()
-                                    love.graphics.setShader(self._colorTransformShader)
-
-                                    self:setColorOffset(0, 0, 0, 0)
-                                    self:setColorMultiplier(1, 1, 1, 1)
-                                    
-                                    if colorTransformMode == "brightness" then
-                                        local brightness = colorTransform["brightness"]
-                                        self:setColorOffset(brightness, brightness, brightness, 0)
-                                        self:setColorMultiplier(
-                                            1 - math.abs(brightness),
-                                            1 - math.abs(brightness),
-                                            1 - math.abs(brightness),
-                                            1
-                                        )
-
-                                    elseif colorTransformMode == "tint" then
-                                        local tintColor = tonumber("0xFF" + colorTransform["tintColor"]:sub(2))
-                                        local tintR, tintG, tintB = intToRGB(tintColor)
-                                        
-                                        local multiplier = colorTransform["tintMultiplier"]
-                                        self:setColorOffset(
-                                            tintR * multiplier,
-                                            tintG * multiplier,
-                                            tintB * multiplier,
-                                            0
-                                        )
-                                        self:setColorMultiplier(
-                                            1 - multiplier,
-                                            1 - multiplier,
-                                            1 - multiplier,
-                                            1
-                                        )
-
-                                    elseif colorTransformMode == "alpha" then
-                                        local alphaMultiplier = colorTransform["alphaMultiplier"]
-                                        self:setColorMultiplier(1, 1, 1, alphaMultiplier)
-                                    
-                                    elseif colorTransformMode == "advanced" then
-                                        self:setColorOffset(
-                                            colorTransform["redOffset"],
-                                            colorTransform["greenOffset"],
-                                            colorTransform["blueOffset"],
-                                            colorTransform["AlphaOffset"]
-                                        )
-                                        self:setColorMultiplier(
-                                            colorTransform["RedMultiplier"],
-                                            colorTransform["greenMultiplier"],
-                                            colorTransform["blueMultiplier"],
-                                            colorTransform["alphaMultiplier"]
-                                        )
-                                    end
-                                    love.graphics.draw(texture, quad, drawMatrix)
-                                    love.graphics.setShader(lastShader)
-                                    break
-                                end
-                            end
-                        end
-                    end
-                end
-
+            if ret == true then
                 break
             end
         end

@@ -2,6 +2,8 @@
 
 require("loveanimate")
 
+local json = require("loveanimate.libs.JSON")
+
 local camX = -640
 local camY = -360
 local camZoom = 1
@@ -16,7 +18,13 @@ local men
 
 function love.load()
     men = love.animate.newAtlas()
-    men:load("examples/lyric")
+
+	if(arg[2] ~= nil) then
+		men:load("examples/"..tostring(arg[2]))
+	else
+		men:load("examples/CUTSCENE")
+	end
+
     -- men.symbol = "Pico DJ"
 
     love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
