@@ -20,6 +20,13 @@ require("loveanimate.libs.StringUtil")
 function AnimateAtlas:constructor()
     self.frame = 0
     self.symbol = ""
+    self.playing = false
+
+    --- @protected
+    self._curSymbol = nil
+
+    --- @protected
+    self._frameTimer = 0
 
     --- @protected
     self._rotatedAtlasSpriteTextures = {} --- @type table<string, love.Image>
@@ -47,7 +54,7 @@ function AnimateAtlas:setColorMultiplier(r, g, b, a)
     self._colorTransformShader:send("colorMultiplier", {r, g, b, a})
 end
 
-local COLOR_TRANSFORM = {
+local colorTransforms = {
     brightness = function(self, colorTransform)
         local brightness = colorTransform["brightness"]
         self:setColorOffset(brightness, brightness, brightness, 0)
@@ -155,6 +162,26 @@ function AnimateAtlas:load(folder)
     print("Loaded at " .. self.framerate .. " frames per second")
 end
 
+---
+--- @param symbol string?
+---
+function AnimateAtlas:play(symbol)
+    self.frame = 0
+    self.symbol = symbol or ""
+
+    self.playing = true
+    self._frameTimer = 0.0
+end
+
+function AnimateAtlas:stop()
+    self.playing = false
+    self._frameTimer = 0.0
+end
+
+function AnimateAtlas:resume()
+    self.playing = true
+end
+
 function AnimateAtlas:getTimelineLength(timeline)
     local optimized = timeline.optimized == true or timeline.L ~= nil
     if timeline.data then
@@ -183,7 +210,7 @@ function AnimateAtlas:getLength()
     return self:getTimelineLength(self.timeline.data[optimized and "AN" or "ANIMATION"][optimized and "TL" or "TIMELINE"])
 end
 
-local function MATRIX_2D(matrix)
+local function matrix2D(matrix)
     return "column", -- OKAY MAKE SURE THIS IS HERE LOL
         matrix[1], -- a
         matrix[2], -- b
@@ -196,7 +223,7 @@ local function MATRIX_2D(matrix)
         0, 1
 end
 
-local function MATRIX_3D(matrix, optimized)
+local function matrix3D(matrix, optimized)
     if optimized then
         return "column",
             matrix[1], -- a
@@ -217,7 +244,7 @@ local function MATRIX_3D(matrix, optimized)
         matrix["m30"], matrix["m31"], matrix["m32"], matrix["m33"]
 end
 
-local function RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform, optimized)
+local function renderSymbol(self, symbol, frame, index, matrix, colorTransform, optimized)
     local symbolName = symbol[optimized and "SN" or "SYMBOL_name"]
 
     -- get the symbol's first frame
@@ -274,7 +301,7 @@ local function RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform,
         symbolMatrixRaw = symbol[optimized and "MX" or "Matrix"]
     end
 
-    symbolMatrix:setMatrix((is3DMatrix and MATRIX_3D or MATRIX_2D)(symbolMatrixRaw, optimized))
+    symbolMatrix:setMatrix((is3DMatrix and matrix3D or matrix2D)(symbolMatrixRaw, optimized))
 
     -- TODO: is this shit even working correctly??
     local symbolColor = symbol[optimized and "C" or "color"]
@@ -298,7 +325,7 @@ local function RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform,
     self:drawTimeline(symbolTimeline, frameIndex, matrix:clone():apply(symbolMatrix), colorTransform)
 end
 
-local function RENDER_SPRITE(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
+local function renderSprite(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
     -- store thecolor transform mode somewhere
     local colorTransformMode = colorTransform and colorTransform.mode or nil
     if not colorTransformMode then
@@ -310,42 +337,36 @@ local function RENDER_SPRITE(self, sprite, spritemap, spriteMatrix, matrix, colo
     local texture = spritemap.texture --- @type love.Image
     local quad = love.graphics.newQuad(sprite.x, sprite.y, sprite.w, sprite.h, texture:getWidth(), texture:getHeight())
 
-    local drawMatrix = matrix*spriteMatrix
+    local drawMatrix = matrix * spriteMatrix
     if sprite.rotated then
         drawMatrix:translate(0,sprite.w)
         drawMatrix:rotate(-math.pi/2)
     end
-
     local lastShader = love.graphics.getShader()
     love.graphics.setShader(self._colorTransformShader)
 
     self:setColorOffset(0, 0, 0, 0)
     self:setColorMultiplier(1, 1, 1, 1)
 
-    if(type(COLOR_TRANSFORM[colorTransformMode]) == "function") then
-        COLOR_TRANSFORM[colorTransformMode](self, colorTransform)
+    if(type(colorTransforms[colorTransformMode]) == "function") then
+        colorTransforms[colorTransformMode](self, colorTransform)
     end
-
     love.graphics.draw(texture, quad, drawMatrix)
     love.graphics.setShader(lastShader)
 end
 
-local function RENDER_ATLAS_SPRITE(self, atlasSprite, matrix, colorTransform, optimized)
-
-
+local function renderAtlasSprite(self, atlasSprite, matrix, colorTransform, optimized)
     local name = atlasSprite[optimized and "N" or "name"]
     local is3DMatrix = atlasSprite[optimized and "M3D" or "Matrix3D"] ~= nil
 
-    local spriteMatrix = love.math.newTransform()
-
-    local spriteMatrixRaw
+    local spriteMatrixRaw = nil
     if is3DMatrix then
         spriteMatrixRaw = atlasSprite[optimized and "M3D" or "Matrix3D"]
     else
         spriteMatrixRaw = atlasSprite[optimized and "MX" or "Matrix"]
     end
-
-    spriteMatrix:setMatrix((is3DMatrix and MATRIX_3D or MATRIX_2D)(spriteMatrixRaw, optimized))
+    local spriteMatrix = love.math.newTransform()
+    spriteMatrix:setMatrix((is3DMatrix and matrix3D or matrix2D)(spriteMatrixRaw, optimized))
 
     local spritemaps = self.spritemaps
     for l = 1, #spritemaps do
@@ -355,21 +376,20 @@ local function RENDER_ATLAS_SPRITE(self, atlasSprite, matrix, colorTransform, op
             local sprite = sprites[z].SPRITE
 
             if sprite.name == name then
-                RENDER_SPRITE(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
+                renderSprite(self, sprite, spritemap, spriteMatrix, matrix, colorTransform)
                 break
             end
         end
     end
 end
 
-local function RENDER_KEYFRAME(self, keyframe, frame, matrix, colorTransform, optimized)
+local function renderKeyFrame(self, keyframe, frame, matrix, colorTransform, optimized)
     local index = keyframe[optimized and "I" or "index"]
     local duration = keyframe[optimized and "DU" or "duration"]
 
     if not (frame >= index and frame < index + duration) then
-        return
+        return false
     end
-
     local elements = keyframe[optimized and "E" or "elements"]
 
     for k = 1, #elements do
@@ -379,9 +399,10 @@ local function RENDER_KEYFRAME(self, keyframe, frame, matrix, colorTransform, op
         local atlasSprite = element[optimized and "ASI" or "ATLAS_SPRITE_instance"]
 
         if symbol then
-            RENDER_SYMBOL(self, symbol, frame, index, matrix, colorTransform, optimized)
+            self._curSymbol = { data = symbol, index = index }
+            renderSymbol(self, symbol, frame, index, matrix, colorTransform, optimized)
         elseif atlasSprite then
-            RENDER_ATLAS_SPRITE(self, atlasSprite, matrix, colorTransform, optimized)
+            renderAtlasSprite(self, atlasSprite, matrix, colorTransform, optimized)
         end
     end
 
@@ -402,9 +423,7 @@ function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
         local keyframes = layer[optimized and "FR" or "Frames"]
 
         for j = 1, #keyframes do
-            local ret = RENDER_KEYFRAME(self, keyframes[j], frame, matrix, colorTransform, optimized)
-
-            if ret == true then
+            if renderKeyFrame(self, keyframes[j], frame, matrix, colorTransform, optimized) then
                 break
             end
         end
@@ -424,14 +443,90 @@ function AnimateAtlas:getSymbolTimeline(symbol)
     return timeline
 end
 
-function AnimateAtlas:draw(x, y)
+function AnimateAtlas:update(dt)
+    if self.framerate <= 0.0 or not self.playing then
+        return
+    end
+    self._frameTimer = self._frameTimer + dt
+    if self._frameTimer >= 1.0 / self.framerate then
+        self.frame = self.frame + 1
+
+        local length = self:getTimelineLength(self:getSymbolTimeline(self.symbol))
+        if self.frame > length - 1 then
+            if self._curSymbol then
+                local optimized = self._curSymbol.data.ST ~= nil
+                local symbolName = self._curSymbol.data[optimized and "SN" or "SYMBOL_name"]
+
+                local firstFrame = self._curSymbol.data[optimized and "FF" or "firstFrame"]
+                if firstFrame == nil then
+                    firstFrame = 0
+                end
+                local frameIndex = firstFrame -- get the frame index we want to possibly render
+                frameIndex = frameIndex + (self.frame - self._curSymbol.index)
+
+                local symbolType = self._curSymbol.data[optimized and "ST" or "symbolType"]
+                if symbolType == "movieclip" or symbolType == "MC" then
+                    -- movie clips can only display first frame
+                    frameIndex = 0
+                end
+                local loopMode = self._curSymbol.data[optimized and "LP" or "loop"]
+
+                local library = self.libraries[symbolName]
+                local symbolTimeline = library.data
+
+                local length = self:getTimelineLength(symbolTimeline)
+                
+                if loopMode == "loop" or loopMode == "LP" then
+                    -- wrap around back to 0
+                    if frameIndex < 0 then
+                        frameIndex = length - 1
+                    end
+                    if frameIndex > length - 1 then
+                        frameIndex = 0
+                    end
+
+                elseif loopMode == "playonce" or loopMode == "PO" then
+                    -- stop at last frame
+                    if frameIndex < 0 then
+                        frameIndex = 0
+                    end
+                    if frameIndex > length - 1 then
+                        frameIndex = length - 1
+                    end
+
+                elseif loopMode == "singleframe" or loopMode == "SF" then
+                    -- stop at first frame
+                    frameIndex = firstFrame
+                end
+                self.frame = frameIndex
+            else
+                self.frame = length - 1
+            end
+        end
+        self._frameTimer = 0.0
+    end
+end
+
+function AnimateAtlas:draw(x, y, r, sx, sy, ox, oy)
+    r = r or 0.0 -- rotation (radians)
+    sx = sx or 1.0 -- scale x
+    sy = sy or 1.0 -- scale y
+    ox = ox or 0.0 -- origin x
+    oy = oy or 0.0 -- origin y
+    
     local identity = love.math.newTransform()
     identity:translate(x, y)
+    
+    identity:translate(-ox, -oy)
+    identity:rotate(r)
+    identity:scale(sx, sy)
+    identity:translate(ox, oy)
 
     local timeline = self:getSymbolTimeline(self.symbol)
     if timeline.data then
         timeline = timeline.data[timeline.optimized and "AN" or "ANIMATION"][timeline.optimized and "TL" or "TIMELINE"]
     end
+    self._curSymbol = nil
     self:drawTimeline(timeline, self.frame, identity, nil)
 end
 

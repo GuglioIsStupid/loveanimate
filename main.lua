@@ -1,15 +1,11 @@
 -- This is the main testing file!
 
 require("loveanimate")
-
-local json = require("loveanimate.libs.JSON")
+require("autobatch")
 
 local camX = -640
 local camY = -360
 local camZoom = 1
-
-local timer = 0.0
-local frame = 0
 
 ---
 --- @type love.animate.AnimateAtlas
@@ -22,10 +18,9 @@ function love.load()
 	if(arg[2] ~= nil) then
 		men:load("examples/"..tostring(arg[2]))
 	else
-		men:load("examples/CUTSCENE")
+		men:load("examples/tankman")
 	end
-
-    -- men.symbol = "Pico DJ"
+	men:play()
 
     love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
 end
@@ -43,17 +38,7 @@ function love.update(dt)
     if love.keyboard.isDown("down") then
         camY = camY + (500 * dt)
     end
-
-	timer = timer + dt
-	local length = men:getTimelineLength(men:getSymbolTimeline(men.symbol))
-	while timer > 1.0 / 24.0 do
-		frame = frame + 1
-		if frame > length - 1 then
-			frame = 0
-		end
-		timer = timer - 1.0 / 24.0
-	end
-	men.frame = frame
+	men:update(dt)
 end
 
 function love.wheelmoved(x, y)
