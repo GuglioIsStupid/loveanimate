@@ -46,7 +46,6 @@ end
 function love.draw()
     atlas:draw() -- Can't see the atlas if you never draw it!
 end
--- 
 ```
 
 ## 📜 TODO
