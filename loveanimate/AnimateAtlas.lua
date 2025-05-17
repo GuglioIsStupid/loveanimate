@@ -517,10 +517,10 @@ function AnimateAtlas:draw(x, y, r, sx, sy, ox, oy)
     local identity = love.math.newTransform()
     identity:translate(x, y)
     
-    identity:translate(-ox, -oy)
+    identity:translate(ox, oy)
     identity:rotate(r)
     identity:scale(sx, sy)
-    identity:translate(ox, oy)
+    identity:translate(-ox, -oy)
 
     local timeline = self:getSymbolTimeline(self.symbol)
     if timeline.data then

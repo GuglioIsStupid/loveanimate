@@ -7,14 +7,15 @@ local camX = -640
 local camY = -360
 local camZoom = 1
 
----
---- @type love.animate.AnimateAtlas
----
-local men
+local men = nil --- @type love.animate.AnimateAtlas
+local men2 = nil --- @type love.animate.SparrowAtlas
+
+local speen = 0.0
 
 function love.load()
-    men = love.animate.newAtlas()
+	love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
 
+    men = love.animate.newTextureAtlas()
 	if(arg[2] ~= nil) then
 		men:load("examples/"..tostring(arg[2]))
 	else
@@ -22,7 +23,9 @@ function love.load()
 	end
 	men:play()
 
-    love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
+	men2 = love.animate.newSparrowAtlas()
+	men2:load("examples/bf/sheet.png", "examples/bf/sheet.xml", 24)
+	men2:play("BF idle dance")
 end
 
 function love.update(dt)
@@ -38,7 +41,9 @@ function love.update(dt)
     if love.keyboard.isDown("down") then
         camY = camY + (500 * dt)
     end
+	speen = speen + dt
 	men:update(dt)
+	men2:update(dt)
 end
 
 function love.wheelmoved(x, y)
@@ -54,7 +59,10 @@ function love.draw()
 	love.graphics.push()
 	love.graphics.translate(love.graphics.getWidth() * (1 - camZoom) * 0.5, love.graphics.getHeight() * (1 - camZoom) * 0.5)
 	love.graphics.scale(camZoom, camZoom)
-    men:draw(-camX, -camY)
+    
+	men:draw(-camX, -camY)
+	men2:draw(-camX, -camY, math.rad(speen * 20), 1.0, 1.0, men2:getFrameWidth(men2.symbol, 0) * 0.5, men2:getFrameHeight(men2.symbol, 0) * 0.5)
+
 	love.graphics.pop()
     love.graphics.print(love.timer.getFPS() .. " FPS", 10, 3)
 end
