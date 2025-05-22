@@ -1,0 +1,209 @@
+{
+"ANIMATION":{
+"name":"BoyFriend_Assets",
+"SYMBOL_name":"a",
+"TIMELINE":{
+"LAYERS":[
+{
+"Layer_name":"BF dies Layer",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF dies",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":920.45,"y":452.15},
+"loop":"playonce",
+"Matrix":[1,0,0,1,920.45,452.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Dead Loop",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1410.3,"y":439.5},
+"loop":"playonce",
+"Matrix":[1,0,0,1,1410.3,439.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"retry select",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":2076.3,"y":1223.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,1995.95,1171.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Dead confirm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":2155.7,"y":1143.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,1918.95,426.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF idle shaking",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-233.95,"y":-202.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,-233.95,-202.5]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE RIGHT",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":183.8,"y":734.2},
+"loop":"playonce",
+"Matrix":[1,0,0,1,183.8,734.2]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE LEFT",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-235.4,"y":725.95},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-235.4,725.95]
+}}]}
+]},{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF HEY!!",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1114.05,"y":260.8},
+"loop":"playonce",
+"Matrix":[1,0,0,1,1114.05,260.8]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE DOWN",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1172.3,"y":288.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,978.65,102.25]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE UP",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":772.2,"y":234.05},
+"loop":"loop",
+"Matrix":[1,0,0,1,532.5,-6.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF hit",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1134.45,"y":1067.85},
+"loop":"playonce",
+"Matrix":[1,0,0,1,1134.45,1067.85]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF idle dance",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-219.1,"y":245.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,-219.1,245.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE LEFT MISS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1138.65,"y":755.1},
+"loop":"loop",
+"Matrix":[1,0,0,1,653.15,753.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE RIGHT MISS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1572.4,"y":752.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,1024.2,753.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE DOWN MISS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":244.1,"y":1167.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,50.2,989.9]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF NOTE UP MISS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":713.6,"y":1145.85},
+"loop":"loop",
+"Matrix":[1,0,0,1,471.55,908.05]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"boyfriend dodge",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":1116.35,"y":1187.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,920.05,987.55]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":669.15,"y":1627.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,477.1,1440.25]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"boyfriend attack",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-206.65,"y":1480.95},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-206.65,1480.95]
+}}]}
+]}
+]}}}

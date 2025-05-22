@@ -1,0 +1,262 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf yellow 1",
+"symbolType":"movieclip",
+"transformationPoint":{"x":427.65,"y":126.75},
+"color":{
+"mode":"Alpha",
+"alphaMultiplier":1
+},
+"Matrix":[1,0,0,1,213.3,-85.65],
+"blend":11
+}}]},{
+"index":1,
+"duration":18,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[]
+},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf cringe hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":539.9,"y":207.1},
+"loop":"loop",
+"Matrix":[0.94,0.334,-0.334,0.94,495.55,106.85]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf cringe hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":536.3,"y":214.35},
+"loop":"loop",
+"Matrix":[0.924,0.375,-0.375,0.924,496.4,112.3]
+}}]},{
+"index":6,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf cringe hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":536.2,"y":214.35},
+"loop":"loop",
+"Matrix":[0.973,0.289,-0.245,0.824,482.3,126.8]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[]
+},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf hit face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":506.4,"y":79.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,452.05,35.15]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf hit face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":499.2,"y":82.4},
+"loop":"loop",
+"Matrix":[0.996,0.079,-0.079,0.996,448.6,33.7]
+}}]},{
+"index":6,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf hit face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":486.6,"y":81.5},
+"loop":"loop",
+"Matrix":[0.999,0.018,-0.018,0.999,433.1,36]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":430.1,"y":146},
+"loop":"loop",
+"Matrix":[0.978,-0.187,0.352,0.947,201.45,135.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":443.3,"y":203.8},
+"loop":"loop",
+"Matrix":[1,0,0,1,279.5,68.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf cringe hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":508.85,"y":180.35},
+"loop":"loop",
+"Matrix":[0.976,-0.212,0.212,0.976,439.8,143.8]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF hit head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":473.85,"y":27.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,305.75,-85.65]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":433.75,"y":140.55},
+"loop":"loop",
+"Matrix":[0.959,-0.269,0.498,0.895,201.45,150.35]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":346,"y":301.1},
+"loop":"loop",
+"Matrix":[1,0,0.016,1,275.8,68.5]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf cringe hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":533.35,"y":198.4},
+"loop":"loop",
+"Matrix":[0.985,-0.17,0.17,0.985,445.35,132.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF hit head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":520.2,"y":99.5},
+"loop":"loop",
+"Matrix":[0.975,-0.212,0.212,0.975,277.75,-56.4]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":464.2,"y":139.75},
+"loop":"loop",
+"Matrix":[0.809,0.584,-0.584,0.809,321.95,-29]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":328.95,"y":299.05},
+"loop":"loop",
+"Matrix":[1.018,0,-0.071,0.986,286.85,83.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":492.55,"y":145.9},
+"loop":"loop",
+"Matrix":[0.861,0.504,-0.504,0.861,447.8,-108.6]
+}}]},{
+"index":4,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":459.7,"y":142.45},
+"loop":"loop",
+"Matrix":[0.777,0.626,-0.626,0.777,326.6,-33.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":328.9,"y":299.05},
+"loop":"loop",
+"Matrix":[1.018,0,-0.037,0.986,279.5,83.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":478.9,"y":147.2},
+"loop":"loop",
+"Matrix":[0.845,0.53,-0.53,0.845,442.1,-108.55]
+}}]},{
+"index":6,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":452.5,"y":148.75},
+"loop":"loop",
+"Matrix":[0.813,0.577,-0.649,0.762,312.9,-16]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":328.9,"y":299.05},
+"loop":"loop",
+"Matrix":[1.018,0,-0.037,0.986,279.5,83.45]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":478.9,"y":147.2},
+"loop":"loop",
+"Matrix":[0.888,0.454,-0.454,0.888,419.7,-104.2]
+}}]}
+]}
+]}

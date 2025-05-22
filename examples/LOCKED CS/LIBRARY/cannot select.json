@@ -1,0 +1,40 @@
+{"LAYERS":[
+{
+"Layer_name":"LOCKED MAN Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN slide in",
+"firstFrame":5,
+"symbolType":"graphic",
+"transformationPoint":{"x":-3.85,"y":0.1},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-3.85,0.1]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN slide in",
+"firstFrame":4,
+"symbolType":"graphic",
+"transformationPoint":{"x":23.15,"y":0.1},
+"loop":"singleframe",
+"Matrix":[1,0,0,1,23.15,0.1]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN slide in",
+"firstFrame":6,
+"symbolType":"graphic",
+"transformationPoint":{"x":0.15,"y":0.1},
+"loop":"playonce",
+"Matrix":[1,0,0,1,0.15,0.1]
+}}]}
+]}
+]}

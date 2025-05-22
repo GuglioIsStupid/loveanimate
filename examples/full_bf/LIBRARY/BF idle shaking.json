@@ -1,0 +1,146 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":540.6,"y":-100},
+"loop":"loop",
+"Matrix":[1,0,0,1,372.25,-201.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf face nervous",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":525.45,"y":-65.25},
+"loop":"loop",
+"Matrix":[1,0,0,1,447.3,-128.5]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":541.1,"y":-99.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,372.75,-201.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf face nervous",
+"firstFrame":1,
+"symbolType":"graphic",
+"transformationPoint":{"x":525.95,"y":-64.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,447.8,-128]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":540.1,"y":-100.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,371.75,-202.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf face nervous",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":524.95,"y":-65.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,446.8,-129]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":541.1,"y":-100.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,372.75,-202.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf face nervous",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":525.95,"y":-65.75},
+"loop":"loop",
+"Matrix":[1,0,0,1,447.8,-129]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body nervous",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":508.45,"y":86.2},
+"loop":"loop",
+"Matrix":[1,0,0,1,342.6,-38.4]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":413.95,"y":22.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,301.4,-57.25]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":503.95,"y":7.15},
+"loop":"loop",
+"Matrix":[1,0.009,-0.009,1,302.5,-59]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":503.45,"y":9.15},
+"loop":"loop",
+"Matrix":[1,-0.01,0.01,1,300.75,-54.8]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF defalt arm",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":413.45,"y":22.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,300.9,-57.25]
+}}]}
+]}
+]}

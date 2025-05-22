@@ -1,0 +1,30 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":35,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"_bta_asi_15",
+"symbolType":"movieclip",
+"transformationPoint":{"x":39.8,"y":40.1},
+"Matrix":[1,0,0,1,-266.5,-1030.85],
+"blend":0
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":35,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"retry brain loop movie",
+"symbolType":"movieclip",
+"transformationPoint":{"x":39.8,"y":40.1},
+"Matrix":[1,0,0,1,-266.5,-1030.85]
+}}]}
+]}
+]}

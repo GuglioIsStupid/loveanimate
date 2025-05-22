@@ -1,0 +1,42 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,267.45,-35.8],
+"name":"138"
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,267.3,-35.75],
+"name":"139"
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf right miss reg color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":199.5,"y":198.05},
+"Matrix":[1,0,0,1,0,0],
+"blend":10
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"purp right mzz",
+"symbolType":"movieclip",
+"transformationPoint":{"x":199.5,"y":198.05},
+"Matrix":[1,0,0,1,0,0],
+"blend":10
+}}]}
+]}
+]}

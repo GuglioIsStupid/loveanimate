@@ -1,0 +1,57 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[0.989,0,0,1,278.15,-3.75],
+"name":"142"
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[0.989,0,0,1,277.85,-3.7],
+"name":"143"
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"miss up reg color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":177.55,"y":212.45},
+"Matrix":[1,0,0,1,0,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"purp up mizz",
+"symbolType":"movieclip",
+"transformationPoint":{"x":177.55,"y":212.45},
+"Matrix":[1,0,0,1,0,0],
+"blend":10
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"miss up reg color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":177.55,"y":212.45},
+"Matrix":[1,0,0,1,0,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"purp up mizz",
+"symbolType":"movieclip",
+"transformationPoint":{"x":177.55,"y":212.45},
+"Matrix":[1,0,0,1,0,0],
+"blend":10
+}}]}
+]}
+]}

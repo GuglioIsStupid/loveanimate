@@ -1,0 +1,93 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 7",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[]
+},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"down miss purp dude",
+"symbolType":"movieclip",
+"transformationPoint":{"x":203.2,"y":344.8},
+"Matrix":[0.995,0,0,1.011,12.8,14.7]
+}}]},{
+"index":3,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"down miss purp dude",
+"symbolType":"movieclip",
+"transformationPoint":{"x":200.2,"y":195.85},
+"Matrix":[1,0,0,1,11.75,18.35]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[]
+}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":106.65,"y":249.5},
+"loop":"loop",
+"Matrix":[0.93,0.358,-0.358,0.93,44.45,158]
+}}]}
+]},{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,112.6,76.6],
+"name":"31"
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":210.15,"y":116.15},
+"loop":"loop",
+"Matrix":[0.992,-0.101,0.101,0.992,32.9,32.35]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":206.55,"y":355.75},
+"loop":"loop",
+"Matrix":[1.023,0,0,0.979,29.55,118.5]
+}}]}
+]}
+]}

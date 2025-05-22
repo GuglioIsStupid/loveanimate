@@ -1,0 +1,95 @@
+{"LAYERS":[
+{
+"Layer_name":"random zoom 1 Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random zoom 1",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random zoom 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":2,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random overshoot 1",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":3,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random overshoot 2",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":4,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random overshoot 3",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":5,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random overshoot 4",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-0.05,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-0.05,0]
+}}]},{
+"index":6,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN",
+"firstFrame":10,
+"symbolType":"graphic",
+"transformationPoint":{"x":21,"y":-0.05},
+"loop":"playonce",
+"Matrix":[1,0,0,1,21,-0.05]
+}}]},{
+"index":7,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN",
+"firstFrame":8,
+"symbolType":"graphic",
+"transformationPoint":{"x":21,"y":-0.05},
+"loop":"playonce",
+"Matrix":[1,0,0,1,21,-0.05]
+}}]}
+]}
+]}

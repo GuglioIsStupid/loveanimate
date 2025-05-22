@@ -1,0 +1,41 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,0.989,235.7,-32.75],
+"name":"140"
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,0.989,235.6,-32.65],
+"name":"141"
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"down miss reg color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":188.45,"y":177.5},
+"Matrix":[1,0,0,1,0,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"purp note down mizz",
+"symbolType":"movieclip",
+"transformationPoint":{"x":188.45,"y":177.5},
+"Matrix":[1,0,0,1,0,0],
+"blend":10
+}}]}
+]}
+]}

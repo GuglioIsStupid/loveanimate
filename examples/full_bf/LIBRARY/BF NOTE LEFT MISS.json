@@ -1,0 +1,94 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[]
+},{
+"index":1,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"miss left f color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":506.15,"y":192.05},
+"Matrix":[1,0,-0.018,1,308.55,-189.15]
+}}]},{
+"index":3,
+"duration":31,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"miss left f color",
+"symbolType":"movieclip",
+"transformationPoint":{"x":486.15,"y":10},
+"Matrix":[1,0,0,1,301.55,-189.15]
+}}]}
+]},{
+"Layer_name":"Layer 5",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[]
+}
+]},{
+"Layer_name":"BF HEY!! Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":378.7,"y":64.8},
+"loop":"loop",
+"Matrix":[0.998,-0.034,0.034,0.998,285.6,4.7]
+}}]}
+]},{
+"Layer_name":"BF idle dance Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,401.15,-123],
+"name":"29"
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":425.35,"y":43.5},
+"loop":"loop",
+"Matrix":[0.948,-0.314,0.314,0.948,343.75,16.6]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":520.05,"y":193.65},
+"loop":"loop",
+"Matrix":[1,0,0.198,1,297.4,-37.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":503.2,"y":-87.55},
+"loop":"loop",
+"Matrix":[0.992,0.123,-0.123,0.992,348.7,-208.95]
+}}]}
+]}
+]}

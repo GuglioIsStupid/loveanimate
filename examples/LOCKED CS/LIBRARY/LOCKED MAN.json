@@ -1,0 +1,51 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":15,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random character",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":294.8,"y":70.6},
+"loop":"loop",
+"Matrix":[0.877,0,0,0.877,294.8,70.6]
+}}]},{
+"index":15,
+"duration":8,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random character",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":294.8,"y":70.6},
+"loop":"loop",
+"Matrix":[0.877,0,0,0.877,294.8,70.6]
+}}]},{
+"index":23,
+"duration":3,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random character",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":294.8,"y":70.6},
+"loop":"loop",
+"Matrix":[0.877,0,0,0.877,294.8,70.6]
+}}]},{
+"index":26,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random character",
+"firstFrame":11,
+"symbolType":"graphic",
+"transformationPoint":{"x":294.8,"y":70.6},
+"loop":"loop",
+"Matrix":[0.877,0,0,0.877,294.8,70.6]
+}}]}
+]}
+]}

@@ -1,0 +1,89 @@
+{"LAYERS":[
+{
+"Layer_name":"BF HEY!! Layer",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":444.65,"y":44.5},
+"loop":"loop",
+"Matrix":[0.982,0.184,-0.184,0.982,366.65,-34.5]
+}}]},{
+"index":2,
+"duration":60,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":441.7,"y":44.5},
+"loop":"loop",
+"Matrix":[0.994,0.11,-0.11,0.994,358,-28.45]
+}}]}
+]},{
+"Layer_name":"BF idle dance Layer",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,471.85,-129.15],
+"name":"19"
+}}]},{
+"index":2,
+"duration":60,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,475.85,-132.7],
+"name":"20"
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":512.05,"y":177.65},
+"loop":"loop",
+"Matrix":[1,0,-0.163,1,378.3,-37.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":580.2,"y":-94.55},
+"loop":"loop",
+"Matrix":[0.992,-0.115,0.115,0.992,401.6,-175.95]
+}}]},{
+"index":2,
+"duration":60,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf body default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":512.05,"y":177.65},
+"loop":"loop",
+"Matrix":[1,0,-0.135,1,372.2,-37.95]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":580.2,"y":-95.55},
+"loop":"loop",
+"Matrix":[0.997,-0.062,0.062,0.997,406.05,-186.25]
+}}]}
+]}
+]}

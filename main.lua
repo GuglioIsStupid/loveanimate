@@ -13,13 +13,14 @@ local men2 = nil --- @type love.animate.SparrowAtlas
 local speen = 0.0
 
 function love.load()
+	love.window.setVSync(0)
 	love.graphics.setBackgroundColor(0.5, 0.5, 0.5)
 
     men = love.animate.newTextureAtlas()
 	if(arg[2] ~= nil) then
 		men:load("examples/"..tostring(arg[2]))
 	else
-		men:load("examples/tankman")
+		men:load("examples/DARNELL_CUTSCENE3")
 	end
 	men:play()
 
@@ -61,7 +62,7 @@ function love.draw()
 	love.graphics.scale(camZoom, camZoom)
     
 	men:draw(-camX, -camY)
-	men2:draw(-camX, -camY, math.rad(speen * 20), 1.0, 1.0, men2:getFrameWidth(men2.symbol, 0) * 0.5, men2:getFrameHeight(men2.symbol, 0) * 0.5)
+	--men2:draw(-camX, -camY, math.rad(speen * 20), 1.0, 1.0, men2:getFrameWidth(men2.symbol, 0) * 0.5, men2:getFrameHeight(men2.symbol, 0) * 0.5)
 
 	love.graphics.pop()
     love.graphics.print(love.timer.getFPS() .. " FPS", 10, 3)

@@ -1,0 +1,100 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"balls lolz",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":276.2,"y":1295.7},
+"loop":"loop",
+"Matrix":[1,0,0,1,-23.5,317.3]
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic full forward",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":154.85,"y":1389.5},
+"loop":"loop",
+"Matrix":[1,0,0,1,69.8,1346.7]
+}}]}
+]},{
+"Layer_name":"retry",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"retry brain loop",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":0,"y":0},
+"loop":"loop",
+"Matrix":[1,0,0,1,0,0]
+}}]}
+]},{
+"Layer_name":"Layer 6",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"black brain outline",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":305.35,"y":1082.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,221.05,1023.15]
+}}]}
+]},{
+"Layer_name":"Layer 8",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,51.25,1026.9],
+"name":"13"
+}}]}
+]},{
+"Layer_name":"Layer 9",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"skeleton twitch loop",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":236.15,"y":1204.15},
+"loop":"loop",
+"Matrix":[1,0,0,1,42.75,1009.4]
+}}]}
+]},{
+"Layer_name":"Layer 10",
+"Frames":[
+{
+"index":0,
+"duration":34,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,35.7,998.7],
+"name":"14"
+}}]}
+]}
+]}

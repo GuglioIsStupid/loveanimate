@@ -1,0 +1,105 @@
+{
+"ANIMATION":{
+"name":"locked character assets v2",
+"StageInstance":{
+"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED CS",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":696.15,"y":376.1},
+"loop":"playonce",
+"Matrix":[1,0,0,1,696.15,376.1]
+}},
+"SYMBOL_name":"LOCKED CS",
+"TIMELINE":{
+"LAYERS":[
+{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"name":"idle",
+"index":0,
+"duration":27,
+"elements":[]
+},{
+"name":"slideout",
+"index":27,
+"duration":2,
+"elements":[]
+},{
+"name":"slidein",
+"index":29,
+"duration":9,
+"elements":[]
+},{
+"name":"death",
+"index":38,
+"duration":71,
+"elements":[]
+},{
+"name":"cannot select",
+"index":109,
+"duration":4,
+"elements":[]
+}
+]},{
+"Layer_name":"LOCKED MAN Layer",
+"Frames":[
+{
+"index":0,
+"duration":27,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.75,"y":-11.4},
+"loop":"playonce",
+"Matrix":[1.046,0,0,1.046,-36.75,-11.4]
+}}]},{
+"index":27,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN slide out",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.6,"y":-11.25},
+"loop":"playonce",
+"Matrix":[1.046,0,0,1.046,-36.6,-11.25]
+}}]},{
+"index":29,
+"duration":9,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN slide in",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.6,"y":-11.25},
+"loop":"playonce",
+"Matrix":[1.046,0,0,1.046,-36.6,-11.25]
+}}]},{
+"index":38,
+"duration":71,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"locked man explodes",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.1,"y":-11.2},
+"loop":"playonce",
+"Matrix":[1.046,0,0,1.046,-36.1,-11.2]
+}}]},{
+"index":109,
+"duration":4,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"cannot select",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-36.75,"y":-11.35},
+"loop":"playonce",
+"Matrix":[1.046,0,0,1.046,-36.75,-11.35]
+}}]}
+]}
+]}}}

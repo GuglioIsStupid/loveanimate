@@ -1,0 +1,115 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 4",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,193.25,96.3],
+"name":"27"
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[1,0,0,1,193.15,105.6],
+"name":"28"
+}}]}
+]},{
+"Layer_name":"Layer 3",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":114.15,"y":269.75},
+"loop":"loop",
+"Matrix":[0.853,-0.519,0.519,0.853,3.5,263.25]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"mic hand",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":110.15,"y":272.75},
+"loop":"loop",
+"Matrix":[0.879,-0.474,0.474,0.879,0,260.35]
+}}]}
+]},{
+"Layer_name":"Layer 2",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":284.55,"y":162.45},
+"loop":"loop",
+"Matrix":[0.88,0.471,-0.471,0.88,184.2,-6.3]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Head defalt",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":283.55,"y":166.45},
+"loop":"loop",
+"Matrix":[0.891,0.451,-0.451,0.891,179.35,0]
+}}]}
+]},{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":170.1,"y":278.5},
+"loop":"loop",
+"Matrix":[0.999,0.035,-0.035,0.999,102.75,224.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":201.4,"y":449},
+"loop":"loop",
+"Matrix":[0.988,0,0,1.017,42.55,206.7]
+}}]},{
+"index":2,
+"duration":13,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"arm default",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":170.1,"y":278.5},
+"loop":"loop",
+"Matrix":[0.999,0.035,-0.035,0.999,102.75,224.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Up",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":204.4,"y":346},
+"loop":"loop",
+"Matrix":[1,0,0,1,40.6,210.7]
+}}]}
+]}
+]}

@@ -1,0 +1,136 @@
+{"LAYERS":[
+{
+"Layer_name":"Layer 1",
+"Frames":[
+{
+"index":0,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.15,"y":355.45},
+"loop":"loop",
+"Matrix":[1.038,-0.01,-0.083,0.97,19.5,122.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.65,"y":193.3},
+"loop":"loop",
+"Matrix":[0.998,-0.067,0.067,0.998,135.15,137.1]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":209.2,"y":116.5},
+"loop":"loop",
+"Matrix":[0.999,-0.044,0.044,0.999,42.85,9.85]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf mic prep",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":142.25,"y":225.2},
+"loop":"loop",
+"Matrix":[0.997,0.071,-0.071,0.997,97.1,199.4]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack face",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":202.2,"y":143.8},
+"loop":"loop",
+"Matrix":[0.999,-0.044,0.044,0.999,100.05,95.55]
+}}]},{
+"index":2,
+"duration":2,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Down",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.1,"y":355.45},
+"loop":"loop",
+"Matrix":[1.029,-0.01,-0.063,0.98,16.3,119.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack body",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.65,"y":193.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,139.15,128.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack head",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":206.65,"y":113.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,45.15,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf mic prep",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":119.65,"y":222.65},
+"loop":"loop",
+"Matrix":[1,-0.022,0.022,1,92.3,200.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack face",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":198.4,"y":140.9},
+"loop":"singleframe",
+"Matrix":[1,0,0,1,98.5,88.15]
+}}]},{
+"index":4,
+"duration":26,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"BF Body Down",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":179.1,"y":355.45},
+"loop":"loop",
+"Matrix":[1.029,-0.01,-0.063,0.98,16.3,119.65]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack body",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":261.65,"y":193.3},
+"loop":"loop",
+"Matrix":[1,0,0,1,139.15,128.75]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack head",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":206.65,"y":113.95},
+"loop":"loop",
+"Matrix":[1,0,0,1,45.15,0]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf mic prep",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":196.35,"y":247.65},
+"loop":"loop",
+"Matrix":[1,0,0,1,92.8,200.15]
+}},
+{"SYMBOL_Instance":{
+"SYMBOL_name":"bf pre attack face",
+"firstFrame":2,
+"symbolType":"graphic",
+"transformationPoint":{"x":198.4,"y":140.9},
+"loop":"singleframe",
+"Matrix":[1,0,0,1,98.5,88.15]
+}}]}
+]}
+]}

@@ -1,0 +1,29 @@
+{"LAYERS":[
+{
+"Layer_name":"random zoom 1 Layer",
+"Frames":[
+{
+"index":0,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"LOCKED MAN",
+"firstFrame":6,
+"symbolType":"graphic",
+"transformationPoint":{"x":319.1,"y":-132.05},
+"loop":"playonce",
+"Matrix":[1,0,-0.074,1,11.25,-0.05]
+}}]},{
+"index":1,
+"duration":1,
+"elements":[
+{"SYMBOL_Instance":{
+"SYMBOL_name":"random zoom 1",
+"firstFrame":0,
+"symbolType":"graphic",
+"transformationPoint":{"x":-368.15,"y":0},
+"loop":"playonce",
+"Matrix":[1,0,0,1,-368.15,0]
+}}]}
+]}
+]}

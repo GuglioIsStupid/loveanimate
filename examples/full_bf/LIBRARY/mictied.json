@@ -1,0 +1,10 @@
+{"LAYERS":[
+{"Layer_name":"Layer 1",
+"Frames":[
+{"index":0,
+"duration":1,
+"elements":[
+{"ATLAS_SPRITE_instance":{
+"Matrix":[0.935,0,0,0.977,0,0],
+"name":"34"
+}}]}]}]}

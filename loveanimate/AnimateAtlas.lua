@@ -192,6 +192,9 @@ function AnimateAtlas:getTimelineLength(timeline)
     for i = #timelineLayers, 1, -1 do
         local layer = timelineLayers[i]
         local layerFrames = layer[optimized and "FR" or "Frames"]
+        if layerFrames == nil then
+            goto continue
+        end
 
         local keyframe = layerFrames[#layerFrames]
         if keyframe ~= nil then
@@ -200,6 +203,7 @@ function AnimateAtlas:getTimelineLength(timeline)
                 longest = length
             end
         end
+        ::continue::
     end
     
     return longest
@@ -273,8 +277,8 @@ local function renderSymbol(self, symbol, frame, index, matrix, colorTransform, 
         if frameIndex < 0 then
             frameIndex = length - 1
         end
-        if frameIndex > length - 1 then
-            frameIndex = 0
+        while frameIndex > length - 1 do
+            frameIndex = frameIndex - length
         end
 
     elseif loopMode == "playonce" or loopMode == "PO" then
@@ -343,16 +347,21 @@ local function renderSprite(self, sprite, spritemap, spriteMatrix, matrix, color
         drawMatrix:rotate(-math.pi/2)
     end
     local lastShader = love.graphics.getShader()
-    love.graphics.setShader(self._colorTransformShader)
+    if colorTransform ~= nil then
+        love.graphics.setShader(self._colorTransformShader)
+        self:setColorOffset(0, 0, 0, 0)
+        self:setColorMultiplier(1, 1, 1, 1)
 
-    self:setColorOffset(0, 0, 0, 0)
-    self:setColorMultiplier(1, 1, 1, 1)
-
-    if(type(colorTransforms[colorTransformMode]) == "function") then
-        colorTransforms[colorTransformMode](self, colorTransform)
+        if(type(colorTransforms[colorTransformMode]) == "function") then
+            colorTransforms[colorTransformMode](self, colorTransform)
+        end
     end
+
     love.graphics.draw(texture, quad, drawMatrix)
-    love.graphics.setShader(lastShader)
+
+    if colorTransform ~= nil then
+        love.graphics.setShader(lastShader)
+    end
 end
 
 local function renderAtlasSprite(self, atlasSprite, matrix, colorTransform, optimized)
@@ -409,6 +418,17 @@ local function renderKeyFrame(self, keyframe, frame, matrix, colorTransform, opt
     return true
 end
 
+local maskShader = love.graphics.newShader[[
+   vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords) {
+        float alpha = Texel(texture, texture_coords).a;
+        if (alpha == 0.0) {
+            // a discarded pixel wont be applied as the stencil.
+            discard;
+        }
+        return vec4(alpha);
+   }
+]]
+
 ---
 --- @param  timeline  table
 --- @param  frame     integer
@@ -417,16 +437,51 @@ end
 function AnimateAtlas:drawTimeline(timeline, frame, matrix, colorTransform)
     local optimized = timeline.L ~= nil
     local timelineLayers = timeline[optimized and "L" or "LAYERS"]
+    local namesToLayers = {}
+
+    for i = #timelineLayers, 1, -1 do
+        local layer = timelineLayers[i]
+        namesToLayers[layer[optimized and "LN" or "Layer_name"]] = layer
+    end
 
     for i = #timelineLayers, 1, -1 do
         local layer = timelineLayers[i]
         local keyframes = layer[optimized and "FR" or "Frames"]
+        local layerType = layer[optimized and "LT" or "Layer_type"]
+        local clippedBy = layer[optimized and "CB" or "Clipped_by"]
+
+        if layerType ~= nil then
+            goto continue
+        end
+
+        if clippedBy ~= nil then
+            love.graphics.clear(false, true, false)
+            love.graphics.setStencilState("replace", "always", 1)
+            
+            local maskLayer = namesToLayers[clippedBy]
+            local maskKeyframes = maskLayer[optimized and "FR" or "Frames"]
+            love.graphics.setShader(maskShader)
+            for j = 1, #maskKeyframes do
+                if renderKeyFrame(self, maskKeyframes[j], frame, matrix, nil, optimized) then
+                    break
+                end
+            end
+            love.graphics.setShader()
+
+            love.graphics.setStencilState("keep", "greater", 0)
+        end
 
         for j = 1, #keyframes do
             if renderKeyFrame(self, keyframes[j], frame, matrix, colorTransform, optimized) then
                 break
             end
         end
+
+        if clippedBy ~= nil then
+            love.graphics.clear(false, true, false)
+            love.graphics.setStencilState()
+        end
+        ::continue::
     end
 end
 
@@ -448,62 +503,62 @@ function AnimateAtlas:update(dt)
         return
     end
     self._frameTimer = self._frameTimer + dt
-    if self._frameTimer >= 1.0 / self.framerate then
+    while self._frameTimer >= 1.0 / self.framerate do
         self.frame = self.frame + 1
+        self._frameTimer = self._frameTimer - 1.0 / self.framerate
+    end
 
-        local length = self:getTimelineLength(self:getSymbolTimeline(self.symbol))
-        if self.frame > length - 1 then
-            if self._curSymbol then
-                local optimized = self._curSymbol.data.ST ~= nil
-                local symbolName = self._curSymbol.data[optimized and "SN" or "SYMBOL_name"]
+    local length = self:getTimelineLength(self:getSymbolTimeline(self.symbol))
+    if self.frame > length - 1 then
+        if self._curSymbol then
+            local optimized = self._curSymbol.data.ST ~= nil
+            local symbolName = self._curSymbol.data[optimized and "SN" or "SYMBOL_name"]
 
-                local firstFrame = self._curSymbol.data[optimized and "FF" or "firstFrame"]
-                if firstFrame == nil then
-                    firstFrame = 0
+            local firstFrame = self._curSymbol.data[optimized and "FF" or "firstFrame"]
+            if firstFrame == nil then
+                firstFrame = 0
+            end
+            local frameIndex = firstFrame -- get the frame index we want to possibly render
+            frameIndex = frameIndex + (self.frame - self._curSymbol.index)
+
+            local symbolType = self._curSymbol.data[optimized and "ST" or "symbolType"]
+            if symbolType == "movieclip" or symbolType == "MC" then
+                -- movie clips can only display first frame
+                frameIndex = 0
+            end
+            local loopMode = self._curSymbol.data[optimized and "LP" or "loop"]
+
+            local library = self.libraries[symbolName]
+            local symbolTimeline = library.data
+
+            local length = self:getTimelineLength(symbolTimeline)
+            
+            if loopMode == "loop" or loopMode == "LP" then
+                -- wrap around back to 0
+                if frameIndex < 0 then
+                    frameIndex = length - 1
                 end
-                local frameIndex = firstFrame -- get the frame index we want to possibly render
-                frameIndex = frameIndex + (self.frame - self._curSymbol.index)
-
-                local symbolType = self._curSymbol.data[optimized and "ST" or "symbolType"]
-                if symbolType == "movieclip" or symbolType == "MC" then
-                    -- movie clips can only display first frame
+                if frameIndex > length - 1 then
                     frameIndex = 0
                 end
-                local loopMode = self._curSymbol.data[optimized and "LP" or "loop"]
 
-                local library = self.libraries[symbolName]
-                local symbolTimeline = library.data
-
-                local length = self:getTimelineLength(symbolTimeline)
-                
-                if loopMode == "loop" or loopMode == "LP" then
-                    -- wrap around back to 0
-                    if frameIndex < 0 then
-                        frameIndex = length - 1
-                    end
-                    if frameIndex > length - 1 then
-                        frameIndex = 0
-                    end
-
-                elseif loopMode == "playonce" or loopMode == "PO" then
-                    -- stop at last frame
-                    if frameIndex < 0 then
-                        frameIndex = 0
-                    end
-                    if frameIndex > length - 1 then
-                        frameIndex = length - 1
-                    end
-
-                elseif loopMode == "singleframe" or loopMode == "SF" then
-                    -- stop at first frame
-                    frameIndex = firstFrame
+            elseif loopMode == "playonce" or loopMode == "PO" then
+                -- stop at last frame
+                if frameIndex < 0 then
+                    frameIndex = 0
                 end
-                self.frame = frameIndex
-            else
-                self.frame = length - 1
+                if frameIndex > length - 1 then
+                    frameIndex = length - 1
+                end
+
+            elseif loopMode == "singleframe" or loopMode == "SF" then
+                -- stop at first frame
+                frameIndex = firstFrame
             end
+            self.frame = frameIndex
+        else
+            self.frame = length - 1
         end
-        self._frameTimer = 0.0
     end
 end
 
